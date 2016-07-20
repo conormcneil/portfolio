@@ -110,7 +110,8 @@ header {
 
   .about-me {
     width: 90%;
-    height: auto; } }
+    height: auto;
+    display: none; } }
 @media (max-width: 450px) {
   body {
     margin: 0;
@@ -124,6 +125,7 @@ header {
 
   .about-me {
     width: 90%;
-    height: auto; } }
+    height: auto;
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
