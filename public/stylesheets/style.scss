@@ -152,6 +152,9 @@ header {
 .pointer {
   cursor: pointer;
 }
+.responsive {
+  display: none;
+}
 
 
 // if less than 800px wide:
@@ -170,6 +173,13 @@ header {
     width: 90%;
     height: auto;
     display: none;
+  }
+  .responsive {
+    border: 1px solid black;
+    padding: 3px;
+    margin: 15px;
+    display: inline-block;
+    position: relative;
   }
 }
 
@@ -190,5 +200,12 @@ header {
     width: 90%;
     height: auto;
     display: none;
+  }
+  .responsive {
+    border: 1px solid black;
+    padding: 3px;
+    margin: 15px;
+    display: inline-block;
+    position: relative;
   }
 }
