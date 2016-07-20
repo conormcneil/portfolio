@@ -61,17 +61,12 @@ header {
 }
 .about-me {
   // box-shadow: 1px 1px 1px 2px $altColor;
-  // margin: 15px;
-  // margin-left: 0;
-  // margin-top: 0;
   margin-top: 25px;
   height: 100%;
   width: 20%;
   float: right;
-  // font-size: 1.5em;
   div {
     width: 100%;
-    // height: 100%;
   }
 }
 .projects {
@@ -99,7 +94,6 @@ header {
 
 .project {
   // border: 1px solid black;
-  // box-shadow: 1px 1px 1px 2px $altColor;
   display: flex;
   flex-flow: column nowrap;
   margin: 15px;
@@ -186,12 +180,11 @@ header {
 // if mobile (less than 450px wide):
 @media (max-width: 450px) {
   body {
-    margin: 0;
-    padding: 0;
-    padding-top: 45px;
-    // border: 1px solid black;
+    // background: red;
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: justify;
   }
   .projects {
     width: 100%;

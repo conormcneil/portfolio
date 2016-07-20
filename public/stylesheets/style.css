@@ -124,11 +124,10 @@ header {
     position: relative; } }
 @media (max-width: 450px) {
   body {
-    margin: 0;
-    padding: 0;
-    padding-top: 45px;
     display: flex;
-    justify-content: center; }
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: justify; }
 
   .projects {
     width: 100%; }
