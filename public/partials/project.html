@@ -1,0 +1,16 @@
+<div class="project">
+  <div class='title'>
+    <a href="{{ project.url }}" target="_blank">
+      <h1>{{ project.title }}</h1>
+    </a>
+    <img ng-src="{{ project.screenshot }}" class="screenshot">
+  </div>
+  <div class="collaborators" ng-show="project.collaborators.length > 0">
+    <p>Collaborators:</p>
+    <p ng-repeat="collaborator in project.collaborators">{{ collaborator }}</p>
+  </div>
+  <div class="description">
+    <p>Description:</p>
+    <p>{{ project.description }}</p>
+  </div>
+</div>

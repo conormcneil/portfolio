@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='projectApp'>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <!-- <link href='https://fonts.googleapis.com/css?family=Abel|Exo+2:400,300|Comfortaa:400,300|Didact+Gothic' rel='stylesheet' type='text/css'> -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+  <script src='./javascripts/app.js'></script>
+  <script src='./javascripts/controllers.js'></script>
+  <script src='./javascripts/directives.js'></script>
+  <script src='./javascripts/services.js'></script>
+  <meta charset="UTF-8">
+  <title>conor kingston</title>
+</head>
+<body>
+
+  <header><p>© conor kingston</p></header>
+
+  <div class="parallax">
+    <div class="about-me parallax__layer parallax__layer--back" ng-controller='AboutMeController'>
+      <ck-about-me></ck-about-me>
+    </div>
+    <div class="projects parallax__layer parallax__layer--base" ng-controller="ProjectController">
+      <ck-project ng-repeat="project in view.projects"></ck-project>
+    </div>
+  </div>
+
+</body>
+</html>

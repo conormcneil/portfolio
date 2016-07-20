@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 100%;
+  background: #324c5c;
+  color: #bacfdb;
+  font-family: "Didact Gothic", sans-serif; }
+
+header {
+  background: #8998a2;
+  color: #4e778f;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 1px 1px 1px 1px grey;
+  font-size: 1.5em;
+  z-index: 1; }
+  header p {
+    margin: 0;
+    margin-left: 15px; }
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto; }
+
+.about-me {
+  height: 100%;
+  width: 20%;
+  float: right; }
+  .about-me div {
+    width: 100%; }
+
+.projects {
+  width: 75%; }
+
+.parallax__layer {
+  position: absolute; }
+
+.parallax__layer--back {
+  right: -100%;
+  display: flex;
+  align-items: flex-end;
+  height: 50%;
+  text-align: right;
+  -webkit-transform: translateZ(-3px);
+  transform: translateZ(-3px) scale(4); }
+
+.parallax__layer--base {
+  transform: translateZ(0); }
+
+.project {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 15px; }
+  .project .title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
+  .project .collaborators {
+    display: flex;
+    flex-flow: column nowrap; }
+    .project .collaborators p:first-child {
+      font-weight: 900;
+      display: flex;
+      align-items: center; }
+    .project .collaborators * {
+      margin: 0;
+      align-items: center; }
+  .project .description {
+    margin-top: 15px;
+    text-align: justify;
+    width: 100; }
+    .project .description p:first-child {
+      font-weight: 900; }
+    .project .description * {
+      margin: 0; }
+  .project div {
+    width: 100%; }
+  .project a {
+    text-decoration: none;
+    text-align: center;
+    color: inherit; }
+
+.screenshot {
+  width: 75%;
+  border: 1px solid black;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px 1px grey; }
+
+.pointer {
+  cursor: pointer; }
+
+@media (max-width: 800px) and (min-width: 451px) {
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: justify; }
+
+  .projects {
+    width: 100%; }
+
+  .about-me {
+    width: 90%;
+    height: auto; } }
+@media (max-width: 450px) {
+  body {
+    margin: 0;
+    padding: 0;
+    padding-top: 45px;
+    display: flex;
+    justify-content: center; }
+
+  .projects {
+    width: 100%; }
+
+  .about-me {
+    width: 90%;
+    height: auto; } }
+
+/*# sourceMappingURL=style.css.map */
