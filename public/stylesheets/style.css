@@ -30,6 +30,7 @@ header {
   overflow-y: auto; }
 
 .about-me {
+  margin-top: 25px;
   height: 100%;
   width: 20%;
   float: right; }
@@ -43,6 +44,7 @@ header {
   position: absolute; }
 
 .parallax__layer--back {
+  top: 150px;
   right: -100%;
   display: flex;
   align-items: flex-end;
