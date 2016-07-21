@@ -20,25 +20,27 @@
   <meta charset="UTF-8">
   <title>conor kingston</title>
 </head>
-<body>
+<body ng-controller='HeaderController'>
 
   <header class="z-depth-1">
     <div class="mobile-responsive">
-      <i class="menu-icon pointer fa fa-bars" aria-hidden="true"></i>
+      <i class="menu-icon pointer fa fa-bars" ng-click="view.toggleMenu()" aria-hidden="true"></i>
     </div>
     <div class="desktop-responsive">
       <p>portfolio</p>
       <p>resume</p>
       <p>contact</p>
+      <p>{{ view.showMenu }}</p>
     </div>
     <p class='site-title'>© conor kingston</p>
   </header>
 
-  <div class='menu mobile-responsive' ng-show="true">
-    <i class="pointer fa fa-chevron-left" aria-hidden="true"></i>
+  <div class='menu mobile-responsive' ng-show="view.showMenu">
+    <i class="pointer fa fa-chevron-left" ng-click="view.toggleMenu()" aria-hidden="true"></i>
     <p>portfolio</p>
     <p>resume</p>
     <p>contact</p>
+    <p>{{ view.showMenu }}</p>
   </div>
 
   <div class="projects" ng-controller='ProjectController'>
