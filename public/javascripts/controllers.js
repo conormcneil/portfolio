@@ -13,8 +13,9 @@ function makeProjectController($scope,ProjectService){
 function makeAboutMeController($scope) {
   $scope.view = {};
   $scope.view.greeting = 'Hi! I\'m Conor!';
-}
+};
 function makeParallaxController($scope) {
   $scope.view = {};
-  $scope.myPattern = '../images/Kustodiev_The_Bolshevik.jpg'
-}
+  $scope.view.greeting = 'hello, parallax!';
+  $scope.view.myPattern = '../images/Kustodiev_The_Bolshevik.jpg';
+};

@@ -1,1 +1,1 @@
-var app = angular.module('projectApp',[]);
+var app = angular.module('projectApp',['ngParallax']);
