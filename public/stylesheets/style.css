@@ -10,6 +10,10 @@ body {
   color: rgba(0, 150, 136, 0.87);
   font-family: "Exo 2", sans-serif; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -34,6 +38,9 @@ header {
     margin-left: 20px;
     display: inline-block; }
 
+.menu-icon-back {
+  padding-left: 15px; }
+
 .about-me {
   margin-top: 45px;
   width: 20%; }
@@ -48,6 +55,7 @@ header {
   flex-flow: column nowrap;
   margin: 15px; }
   .project .title {
+    color: rgba(0, 150, 136, 0.87);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center; }

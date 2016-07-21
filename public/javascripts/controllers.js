@@ -18,9 +18,6 @@ function makeHeaderController($scope) {
   $scope.view = {};
   $scope.view.showMenu = false;
   $scope.view.toggleMenu = function() {
-    console.log('toggle menu');
-    console.log($scope.view.showMenu);
     $scope.view.showMenu = !$scope.view.showMenu;
-    console.log($scope.view.showMenu);
   };
 };

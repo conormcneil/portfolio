@@ -19,6 +19,10 @@ body {
     family: $font1;
   }
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -45,6 +49,9 @@ header {
     display: inline-block;
   }
 }
+.menu-icon-back {
+  padding-left: 15px;
+}
 .about-me {
   margin-top: 45px;
   width: 20%;
@@ -60,6 +67,7 @@ header {
   flex-flow: column nowrap;
   margin: 15px;
   .title {
+    color: rgba($primary,0.87);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;

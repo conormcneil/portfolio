@@ -10,7 +10,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Abel|Exo+2:400,300|Comfortaa:400,300|Didact+Gothic' rel='stylesheet' type='text/css'>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <!-- Angular CDNs -->
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
   <link rel="stylesheet" href="./stylesheets/style.css">
   <script src='./javascripts/ngParallax.min.js'></script>
   <script src='./javascripts/app.js'></script>
@@ -18,6 +20,7 @@
   <script src='./javascripts/directives.js'></script>
   <script src='./javascripts/services.js'></script>
   <meta charset="UTF-8">
+  <base href="/">
   <title>conor kingston</title>
 </head>
 <body ng-controller='HeaderController'>
@@ -27,30 +30,33 @@
       <i class="menu-icon pointer fa fa-bars" ng-click="view.toggleMenu()" aria-hidden="true"></i>
     </div>
     <div class="desktop-responsive">
-      <p>portfolio</p>
-      <p>resume</p>
-      <p>contact</p>
+      <a href="/">
+        <p ng-click="view.showMenu = false;">portfolio</p>
+      </a>
+      <a href="/#/resume">
+        <p ng-click="view.showMenu = false;">resume</p>
+      </a>
+      <a href="/#/contact">
+        <p ng-click="view.showMenu = false;">contact</p>
+      </a>
     </div>
     <p class='site-title'>© conor kingston</p>
   </header>
 
   <div class='menu mobile-responsive' ng-show="view.showMenu">
-    <i class="pointer fa fa-chevron-left" ng-click="view.toggleMenu()" aria-hidden="true"></i>
-    <p>portfolio</p>
-    <p>resume</p>
-    <p>contact</p>
+    <i class="menu-icon-back pointer fa fa-chevron-left" ng-click="view.toggleMenu()" aria-hidden="true"></i>
+    <a href="/">
+      <p ng-click="view.showMenu = false;">portfolio</p>
+    </a>
+    <a href="/#/resume">
+      <p ng-click="view.showMenu = false;">resume</p>
+    </a>
+    <a href="/#/contact">
+      <p ng-click="view.showMenu = false;">contact</p>
+    </a>
   </div>
 
-  <div class="projects" ng-controller='ProjectController'>
-    <ck-project ng-repeat="project in view.projects"></ck-project>
-  </div>
-  <div class="about-me" ng-controller='AboutMeController'>
-    <ck-about-me></ck-about-me>
-  </div>
-
-  <div>
-    <ck-about-me class="responsive"></ck-about-me>
-  </div>
+  <div ng-view></div>
 
 </body>
 </html>
