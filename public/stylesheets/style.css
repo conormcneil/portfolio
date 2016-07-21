@@ -43,7 +43,8 @@ header {
     justify-content: center; }
   .project .collaborators {
     display: flex;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    margin-top: 15px; }
     .project .collaborators p:first-child {
       font-weight: 900;
       display: flex;
@@ -68,7 +69,7 @@ header {
 
 .screenshot {
   width: 75%;
-  border: 1px solid black;
+  border: 3px solid black;
   margin: 0 auto;
   box-shadow: 1px 1px 1px 1px grey; }
 
@@ -96,7 +97,7 @@ header {
 
   .responsive {
     clear: both;
-    border: 1px solid black;
+    border-top: 3px solid black;
     padding: 3px;
     margin: 15px;
     display: inline-block;
@@ -118,7 +119,7 @@ header {
 
   .responsive {
     clear: both;
-    border: 1px solid black;
+    border-top: 1px solid black;
     padding: 3px;
     margin: 15px;
     display: inline-block;

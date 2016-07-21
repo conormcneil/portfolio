@@ -1,13 +1,13 @@
 app.directive('ckProject',function() {
   return {
-    templateUrl: 'partials/project.html',
-    controller: makeProjectController
+    templateUrl: 'partials/project.html'
+    // controller: makeProjectController
   }
 })
 .directive('ckAboutMe',function() {
   return {
-    templateUrl: 'partials/about-me.html',
-    controller: makeAboutMeController
+    templateUrl: 'partials/about-me.html'
+    // controller: makeAboutMeController
   }
 });
 

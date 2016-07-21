@@ -1,17 +1,9 @@
 // Variables
 $font1: 'Exo 2', sans-serif;
-// Pallete 1
-$backgroundColor: rgba(50,76,92,1);
-$fontColor1: rgba(186,207,219,1);
-$backgroundColor2: rgba(137,152,162,1);
-$fontColor2: rgba(120,182,219,1);
-$altColor: rgba(78,119,143,1);
-
 // Material Palette
 $primary: rgba(0,150,136,0.87);
 $secondary: rgba(0,191,165,1);
 $accent: rgba(163,0,146,1);
-
 
 body {
   margin: 0;
@@ -22,7 +14,6 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  // border: 3px solid black;
   color: $primary;
   font: {
     family: $font1;
@@ -52,24 +43,20 @@ header {
 }
 .projects {
   width: 75%;
-  // border: 1px solid red;
 }
-
 .project {
-  // border: 1px solid black;
   display: flex;
   flex-flow: column nowrap;
   margin: 15px;
   .title {
-    // background: red;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
   }
   .collaborators {
-    // background: red;
     display: flex;
     flex-flow: column nowrap;
+    margin-top: 15px;
     p:first-child {
       font-weight: 900;
       display: flex;
@@ -102,7 +89,7 @@ header {
 }
 .screenshot {
   width: 75%;
-  border: 1px solid black;
+  border: 3px solid black;
   margin: 0 auto;
   box-shadow: 1px 1px 1px 1px grey;
 }
@@ -118,7 +105,6 @@ header {
 // if less than 800px wide:
 @media (max-width: 800px) and (min-width: 451px) {
   body {
-    // background: red;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -134,18 +120,16 @@ header {
   }
   .responsive {
     clear: both;
-    border: 1px solid black;
+    border-top: 3px solid black;
     padding: 3px;
     margin: 15px;
     display: inline-block;
     position: relative;
   }
 }
-
 // if mobile (less than 450px wide):
 @media (max-width: 450px) {
   body {
-    // background: red;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -161,7 +145,7 @@ header {
   }
   .responsive {
     clear: both;
-    border: 1px solid black;
+    border-top: 1px solid black;
     padding: 3px;
     margin: 15px;
     display: inline-block;
