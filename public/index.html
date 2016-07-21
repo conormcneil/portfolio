@@ -2,10 +2,16 @@
 <html lang="en" ng-app='projectApp'>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./stylesheets/style.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!-- Font Awesome (icons) -->
+  <script src="https://use.fontawesome.com/67cec8fdd7.js"></script>
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Abel|Exo+2:400,300|Comfortaa:400,300|Didact+Gothic' rel='stylesheet' type='text/css'>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+  <link rel="stylesheet" href="./stylesheets/style.css">
   <script src='./javascripts/ngParallax.min.js'></script>
   <script src='./javascripts/app.js'></script>
   <script src='./javascripts/controllers.js'></script>
@@ -16,9 +22,26 @@
 </head>
 <body>
 
-  <header><p>© conor kingston</p></header>
+  <header class="z-depth-1">
+    <div class="mobile-responsive">
+      <i class="menu-icon pointer fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="desktop-responsive">
+      <p>portfolio</p>
+      <p>resume</p>
+      <p>contact</p>
+    </div>
+    <p class='site-title'>© conor kingston</p>
+  </header>
 
-  <div class="projects" ng-controller="ProjectController">
+  <div class='menu mobile-responsive' ng-show="true">
+    <i class="pointer fa fa-chevron-left" aria-hidden="true"></i>
+    <p>portfolio</p>
+    <p>resume</p>
+    <p>contact</p>
+  </div>
+
+  <div class="projects" ng-controller='ProjectController'>
     <ck-project ng-repeat="project in view.projects"></ck-project>
   </div>
   <div class="about-me" ng-controller='AboutMeController'>
