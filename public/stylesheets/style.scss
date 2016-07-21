@@ -25,12 +25,10 @@ $altColor: rgba(78,119,143,1);
 body {
   margin: 0;
   padding: 0;
-  // padding-top: 25px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   // border: 3px solid black;
-  height: 100%;
   background: $backgroundColor;
   color: $fontColor1;
   font: {
@@ -46,18 +44,10 @@ header {
   width: 100%;
   box-shadow: 1px 1px 1px 1px grey;
   font-size: 1.5em;
-  z-index: 1;
   p {
     margin: 0;
     margin-left: 15px;
   }
-}
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  width: 100%;
-  // overflow-x: hidden;
-  overflow-y: auto;
 }
 .about-me {
   // box-shadow: 1px 1px 1px 2px $altColor;
@@ -72,24 +62,6 @@ header {
 .projects {
   width: 75%;
   // border: 1px solid red;
-}
-// PARALLAX CLASSES:
-.parallax__layer {
-  position: absolute;
-}
-.parallax__layer--back {
-  top: 150px;
-  right: -100%;
-  display: flex;
-  align-items: flex-end;
-  height: 50%;
-  text-align: right;
-  // border: 1px solid red;
-  -webkit-transform: translateZ(-3px);
-  transform: translateZ(-3px) scale(4);
-}
-.parallax__layer--base {
-  transform: translateZ(0);
 }
 
 .project {
@@ -145,6 +117,10 @@ header {
 }
 .pointer {
   cursor: pointer;
+}
+.responsive {
+  clear: both;
+  display: none;
 }
 
 

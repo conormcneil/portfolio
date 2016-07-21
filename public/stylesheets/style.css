@@ -4,7 +4,6 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  height: 100%;
   background: #324c5c;
   color: #bacfdb;
   font-family: "Didact Gothic", sans-serif; }
@@ -17,17 +16,10 @@ header {
   top: 0;
   width: 100%;
   box-shadow: 1px 1px 1px 1px grey;
-  font-size: 1.5em;
-  z-index: 1; }
+  font-size: 1.5em; }
   header p {
     margin: 0;
     margin-left: 15px; }
-
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  width: 100%;
-  overflow-y: auto; }
 
 .about-me {
   margin-top: 25px;
@@ -39,22 +31,6 @@ header {
 
 .projects {
   width: 75%; }
-
-.parallax__layer {
-  position: absolute; }
-
-.parallax__layer--back {
-  top: 150px;
-  right: -100%;
-  display: flex;
-  align-items: flex-end;
-  height: 50%;
-  text-align: right;
-  -webkit-transform: translateZ(-3px);
-  transform: translateZ(-3px) scale(4); }
-
-.parallax__layer--base {
-  transform: translateZ(0); }
 
 .project {
   display: flex;
@@ -97,6 +73,10 @@ header {
 
 .pointer {
   cursor: pointer; }
+
+.responsive {
+  clear: both;
+  display: none; }
 
 @media (max-width: 800px) and (min-width: 451px) {
   body {
