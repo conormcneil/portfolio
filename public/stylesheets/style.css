@@ -136,6 +136,9 @@ header {
   .projects {
     width: 100%; }
 
+  .screenshot {
+    width: 95%; }
+
   .about-me {
     width: 90%;
     height: auto;
@@ -163,6 +166,9 @@ header {
 
   .projects {
     width: 100%; }
+
+  .screenshot {
+    width: 95%; }
 
   .about-me {
     width: 90%;
