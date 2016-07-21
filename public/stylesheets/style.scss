@@ -1,60 +1,51 @@
 // Variables
-$font1: 'Abel', sans-serif;
-$font2: 'Exo 2', sans-serif;
-$font4: 'Didact Gothic', sans-serif;
+$font1: 'Exo 2', sans-serif;
 // Pallete 1
 $backgroundColor: rgba(50,76,92,1);
 $fontColor1: rgba(186,207,219,1);
 $backgroundColor2: rgba(137,152,162,1);
 $fontColor2: rgba(120,182,219,1);
 $altColor: rgba(78,119,143,1);
-// Pallete 2
-// $backupColor1: rgba(116,139,143,1);
-// $backupColor2: rgba(15,93,105,1);
-// $backupColor3: rgba(200,217,219,1);
-// $backupColor4: rgba(66,52,41,1);
-// $backupColor5: rgba(143,128,116,1);
-// Pallete 3
-// $backupColor6: rgba(178,209,186,1);
-// $backupColor7: rgba(69,153,91,1);
-// $backupColor8: rgba(217,169,106,1);
-// $backupColor9: rgba(79,42,127,1);
-// $backupColor10: rgba(152,113,204,1);
+
+// Material Palette
+$primary: rgba(0,150,136,0.87);
+$secondary: rgba(0,191,165,1);
+$accent: rgba(163,0,146,1);
 
 
 body {
   margin: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
   padding: 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   // border: 3px solid black;
-  background: $backgroundColor;
-  color: $fontColor1;
+  color: $primary;
   font: {
-    family: $font4;
+    family: $font1;
   }
 }
 header {
-  background: $backgroundColor2;
-  color: $altColor;
+  background: $primary;
+  opacity: 0.9;
+  color: white;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  box-shadow: 1px 1px 1px 1px grey;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  padding: 10px;
   p {
     margin: 0;
     margin-left: 15px;
   }
 }
 .about-me {
-  // box-shadow: 1px 1px 1px 2px $altColor;
   margin-top: 25px;
-  height: 100%;
   width: 20%;
-  float: right;
   div {
     width: 100%;
   }
