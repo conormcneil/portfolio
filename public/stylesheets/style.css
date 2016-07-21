@@ -98,10 +98,6 @@ header {
 .pointer {
   cursor: pointer; }
 
-.responsive {
-  clear: both;
-  display: none; }
-
 @media (max-width: 800px) and (min-width: 451px) {
   body {
     display: flex;
