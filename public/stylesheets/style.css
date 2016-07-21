@@ -99,6 +99,7 @@ header {
   cursor: pointer; }
 
 .responsive {
+  clear: both;
   display: none; }
 
 @media (max-width: 800px) and (min-width: 451px) {
@@ -117,6 +118,7 @@ header {
     display: none; }
 
   .responsive {
+    clear: both;
     border: 1px solid black;
     padding: 3px;
     margin: 15px;
@@ -138,6 +140,7 @@ header {
     display: none; }
 
   .responsive {
+    clear: both;
     border: 1px solid black;
     padding: 3px;
     margin: 15px;
