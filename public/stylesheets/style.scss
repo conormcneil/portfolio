@@ -7,8 +7,6 @@ $accent: rgba(163,0,146,1);
 
 body {
   margin: 0;
-  // margin-left: 15px;
-  // margin-right: 15px;
   margin-top: 15px;
   padding: 0;
   width: 100%;
@@ -73,7 +71,6 @@ header {
   justify-content: center;
 }
 .project {
-  // margin: 15px;
   width: 95%;
   .title {
     color: rgba($primary,0.87);
@@ -141,7 +138,6 @@ p {
 }
 .responsive {
   clear: both;
-  // display: none;
 }
 .mobile-responsive {
   display: none;
@@ -154,7 +150,7 @@ p {
 .menu {
   background: rgba($secondary,1);
   color: rgba(white,0.87);
-  width: 20%;
+  width: 100px;
   height: 100%;
   position: fixed;
   left: 0;
@@ -199,13 +195,10 @@ p {
     height: auto;
     position: relative;
     margin: 0;
-    // display: none;
   }
   .responsive {
     clear: both;
     border-top: 3px solid $accent;
-    // padding: 3px;
-    // margin: 15px;
     width: 100%;
     display: inline-block;
     position: relative;
@@ -215,7 +208,6 @@ p {
   }
   .desktop-responsive {
     display: none;
-    // width: 80%;
   }
 }
 // if mobile (less than 450px wide):
@@ -252,14 +244,11 @@ p {
     position: relative;
     margin: 0;
     padding: 0;
-    // display: none;
   }
   .responsive {
     width: 100%;
     clear: both;
     border-top: 1px solid $accent;
-    // padding: 3px;
-    // margin: 15px;
     display: inline-block;
     position: relative;
   }

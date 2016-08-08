@@ -27,7 +27,7 @@
 
   <header class="z-depth-1">
     <div class="mobile-responsive">
-      <i class="menu-icon pointer fa fa-bars" ng-click="view.toggleMenu()" aria-hidden="true"></i>
+      <i class="menu-icon pointer fa fa-bars" ng-click="toggle('showMenu')" aria-hidden="true"></i>
     </div>
     <div class="desktop-responsive">
       <a href="/">
@@ -43,8 +43,8 @@
     <p class='site-title'>© conor kingston</p>
   </header>
 
-  <div class='menu mobile-responsive' ng-show="view.showMenu">
-    <i class="menu-icon-back pointer fa fa-chevron-left" ng-click="view.toggleMenu()" aria-hidden="true"></i>
+  <div class='menu' ng-show="view.showMenu">
+    <i class="menu-icon-back pointer fa fa-chevron-left" ng-click="toggle('showMenu')" aria-hidden="true"></i>
     <a href="/">
       <p class="pointer" ng-click="toggle('showMenu');">portfolio</p>
     </a>
