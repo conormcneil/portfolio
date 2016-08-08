@@ -56,7 +56,7 @@ header {
 .about-me {
   margin-top: 45px;
   width: 20%;
-  border: 1 solid red;
+  position: fixed;
   div {
     width: 100%;
   }
@@ -166,7 +166,7 @@ header {
 .content {
   display: flex;
   align-items: center;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
 }
 
 
