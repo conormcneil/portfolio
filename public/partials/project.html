@@ -8,10 +8,10 @@
   <div class="collaborators" ng-show="project.collaborators.length > 0">
     <p class="accent">Collaborators:</p>
     <div class="collaborator" ng-repeat="collaborator in project.collaborators">
-      <p>{{ collaborator.name }}</p>
-      <a href="{{collaborator.github}}" target="_blank">
+      <a href="{{collaborator.github}}" class="github-icon" target="_blank">
         <i class="fa fa-github" aria-hidden="true"></i>
       </a>
+      <p>{{ collaborator.name }}</p>
     </div>
   </div>
   <div class="description">

@@ -16,8 +16,13 @@ function makeAboutMeController($scope) {
 };
 function makeHeaderController($scope) {
   $scope.view = {};
-  $scope.view.showMenu = false;
-  $scope.view.toggleMenu = function() {
-    $scope.view.showMenu = !$scope.view.showMenu;
+  $scope.view = {
+    showMenu: false
+  };
+  $scope.toggle = function(formName) {
+    console.log(formName);
+    console.log($scope.view[formName]);
+    $scope.view[formName] = !$scope.view[formName];
+    console.log($scope.view[formName]);
   };
 };

@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  margin-left: 15px;
-  margin-right: 15px;
   margin-top: 15px;
   padding: 0;
   width: 100%;
@@ -42,6 +40,11 @@ header {
 .menu-icon-back {
   padding-left: 15px; }
 
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 15px; }
+
 .about-me {
   margin-top: 45px;
   width: 20%;
@@ -50,12 +53,13 @@ header {
     width: 100%; }
 
 .projects {
-  width: 75%; }
+  width: 78%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center; }
 
 .project {
-  display: flex;
-  flex-flow: column nowrap;
-  margin: 15px; }
+  width: 95%; }
   .project .title {
     color: rgba(0, 150, 136, 0.87);
     display: flex;
@@ -76,11 +80,10 @@ header {
     display: flex;
     flex-direction: row wrap; }
     .project .collaborator * {
-      padding-right: 15px; }
+      padding-right: 5px; }
   .project .description {
     margin-top: 15px;
-    text-align: justify;
-    width: 100; }
+    text-align: justify; }
     .project .description p:first-child {
       font-weight: 900; }
     .project .description * {
@@ -93,9 +96,12 @@ header {
     color: inherit; }
 
 .screenshot {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 1px 1px 1px 1px grey; }
+
+p {
+  cursor: default; }
 
 .pointer {
   cursor: pointer; }
@@ -108,18 +114,15 @@ header {
   font-variant: small-caps; }
 
 .responsive {
-  clear: both;
-  display: none; }
+  clear: both; }
 
 .mobile-responsive {
   display: none; }
 
 .desktop-responsive {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center; }
-  .desktop-responsive p {
-    padding: 25px; }
 
 .menu {
   background: #00bfa5;
@@ -136,34 +139,39 @@ header {
   .menu p {
     text-align: center; }
 
-.content {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap; }
-
 @media (max-width: 800px) and (min-width: 451px) {
   body {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     align-items: center;
     text-align: justify; }
 
+  .content {
+    display: flex;
+    flex-direction: column; }
+
   .projects {
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 20px; }
+
+  .project {
     width: 100%; }
 
   .screenshot {
     width: 100%; }
 
   .about-me {
-    width: 90%;
+    width: 100%;
     height: auto;
-    display: none; }
+    position: relative;
+    margin: 0; }
 
   .responsive {
     clear: both;
     border-top: 3px solid #a30092;
-    padding: 3px;
-    margin: 15px;
+    width: 100%;
     display: inline-block;
     position: relative; }
 
@@ -171,31 +179,45 @@ header {
     display: inline-block; }
 
   .desktop-responsive {
-    display: none;
-    width: 80%; } }
+    display: none; } }
 @media (max-width: 450px) {
   body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    text-align: justify; }
+    text-align: justify;
+    margin: 0;
+    padding: 0; }
+
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin: 0; }
 
   .projects {
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 20px; }
+
+  .project {
     width: 100%; }
 
   .screenshot {
     width: 100%; }
 
   .about-me {
-    width: 90%;
+    width: 100%;
     height: auto;
-    display: none; }
+    position: relative;
+    margin: 0;
+    padding: 0; }
 
   .responsive {
+    width: 100%;
     clear: both;
     border-top: 1px solid #a30092;
-    padding: 3px;
-    margin: 15px;
     display: inline-block;
     position: relative; }
 

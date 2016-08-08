@@ -31,13 +31,13 @@
     </div>
     <div class="desktop-responsive">
       <a href="/">
-        <p ng-click="view.showMenu = false;">portfolio</p>
+        <p class="pointer" ng-click="toggle('showMenu');">portfolio</p>
       </a>
       <!-- <a href="/#/resume">
-        <p ng-click="view.showMenu = false;">resume</p>
+        <p class="pointer" ng-click="view.showMenu = false;">resume</p>
       </a>
       <a href="/#/contact">
-        <p ng-click="view.showMenu = false;">contact</p>
+        <p class="pointer" ng-click="view.showMenu = false;">contact</p>
       </a> -->
     </div>
     <p class='site-title'>© conor kingston</p>
@@ -46,13 +46,13 @@
   <div class='menu mobile-responsive' ng-show="view.showMenu">
     <i class="menu-icon-back pointer fa fa-chevron-left" ng-click="view.toggleMenu()" aria-hidden="true"></i>
     <a href="/">
-      <p ng-click="view.showMenu = false;">portfolio</p>
+      <p class="pointer" ng-click="toggle('showMenu');">portfolio</p>
     </a>
     <!-- <a href="/#/resume">
-      <p ng-click="view.showMenu = false;">resume</p>
+      <p class="pointer" ng-click="view.showMenu = false;">resume</p>
     </a>
     <a href="/#/contact">
-      <p ng-click="view.showMenu = false;">contact</p>
+      <p class="pointer" ng-click="view.showMenu = false;">contact</p>
     </a> -->
   </div>
 
