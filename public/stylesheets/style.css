@@ -46,7 +46,8 @@ header {
 .content {
   display: flex;
   flex-flow: row wrap;
-  padding: 15px; }
+  padding: 15px;
+  padding-top: 0; }
 
 .about-me {
   margin-top: 45px;
@@ -72,18 +73,19 @@ header {
     display: flex;
     flex-flow: column nowrap;
     margin-top: 15px; }
-    .project .collaborators p:first-child {
-      font-weight: 900;
-      display: flex;
-      align-items: center; }
     .project .collaborators * {
-      margin: 0;
-      align-items: center; }
+      margin: 0; }
   .project .collaborator {
     display: flex;
     flex-direction: row wrap; }
     .project .collaborator * {
       padding-right: 5px; }
+  .project .technologies {
+    margin-top: 15px; }
+    .project .technologies * {
+      margin: 0; }
+  .project .technology li {
+    padding-left: 3px; }
   .project .description {
     margin-top: 15px;
     text-align: justify; }
