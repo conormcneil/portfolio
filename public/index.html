@@ -9,12 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Abel|Exo+2:400,300|Comfortaa:400,300|Didact+Gothic' rel='stylesheet' type='text/css'>
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <!-- Angular CDNs -->
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
   <link rel="stylesheet" href="./stylesheets/style.css">
-  <script src='./javascripts/ngParallax.min.js'></script>
   <script src='./javascripts/app.js'></script>
   <script src='./javascripts/controllers.js'></script>
   <script src='./javascripts/directives.js'></script>
@@ -22,40 +20,9 @@
   <base href="/">
   <title>conor kingston</title>
 </head>
-<body ng-controller='HeaderController'>
-
-  <header class="z-depth-1">
-    <div class="mobile-responsive">
-      <i class="menu-icon pointer fa fa-bars" ng-click="toggle('showMenu')" aria-hidden="true"></i>
-    </div>
-    <div class="desktop-responsive">
-      <a href="/">
-        <p class="pointer" ng-click="toggle('showMenu');">portfolio</p>
-      </a>
-      <!-- <a href="/#/resume">
-        <p class="pointer" ng-click="view.showMenu = false;">resume</p>
-      </a>
-      <a href="/#/contact">
-        <p class="pointer" ng-click="view.showMenu = false;">contact</p>
-      </a> -->
-    </div>
-    <p class='site-title'>© conor kingston</p>
-  </header>
-
-  <div class='menu' ng-show="view.showMenu">
-    <i class="menu-icon-back pointer fa fa-chevron-left" ng-click="toggle('showMenu')" aria-hidden="true"></i>
-    <a href="/">
-      <p class="pointer" ng-click="toggle('showMenu');">portfolio</p>
-    </a>
-    <!-- <a href="/#/resume">
-      <p class="pointer" ng-click="view.showMenu = false;">resume</p>
-    </a>
-    <a href="/#/contact">
-      <p class="pointer" ng-click="view.showMenu = false;">contact</p>
-    </a> -->
-  </div>
-
+<body>
+  <ck-header></ck-header>
+  <ck-nav></ck-nav>
   <div ng-view></div>
-
 </body>
 </html>

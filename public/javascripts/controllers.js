@@ -20,9 +20,6 @@ function makeHeaderController($scope) {
     showMenu: false
   };
   $scope.toggle = function(formName) {
-    console.log(formName);
-    console.log($scope.view[formName]);
     $scope.view[formName] = !$scope.view[formName];
-    console.log($scope.view[formName]);
   };
 };

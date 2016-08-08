@@ -1,18 +1,28 @@
-app.directive('ckProject',function() {
-  return {
-    templateUrl: 'partials/project.html'
-    // controller: makeProjectController
-  }
-})
-.directive('ckAboutMe',function() {
-  return {
-    templateUrl: 'partials/about-me.html'
-    // controller: makeAboutMeController
-  }
-});
-
-app.directive('ckResume',function() {
-  return {
-    templateUrl: 'partials/resume.html'
-  }
-})
+app
+  .directive('ckHeader',function() {
+    return {
+      templateUrl: 'partials/header.html',
+      controller: 'HeaderController'
+    };
+  })
+  .directive('ckNav',function() {
+    return {
+      templateUrl: 'partials/nav.html'
+    }
+  })
+  .directive('ckProject',function() {
+    return {
+      templateUrl: 'partials/project.html'
+    };
+  })
+  .directive('ckAboutMe',function() {
+    return {
+      templateUrl: 'partials/about-me.html'
+      // controller: makeAboutMeController
+    };
+  })
+  .directive('ckResume',function() {
+    return {
+      templateUrl: 'partials/resume.html'
+    };
+  });
