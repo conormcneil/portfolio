@@ -166,6 +166,9 @@ p {
 
   .project {
     width: 100%; }
+    .project .title a {
+      margin-top: -15px;
+      padding-top: -15px; }
 
   .screenshot {
     width: 100%; }
@@ -213,11 +216,13 @@ p {
 
   .projects {
     width: 100%;
-    margin: 0;
-    margin-bottom: 20px; }
+    margin: 0; }
 
   .project {
     width: 100%; }
+    .project .title a {
+      margin-top: -20px;
+      padding-top: -20px; }
 
   .screenshot {
     width: 100%; }
@@ -232,13 +237,14 @@ p {
     margin-bottom: 0;
     padding: 0; }
     .about-me p {
-      margin: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       padding: 0; }
 
   .responsive {
     width: 100%;
     clear: both;
-    border-bottom: 1px solid #a30092;
+    border-bottom: 2px solid #a30092;
     display: inline-block;
     position: relative; }
 
