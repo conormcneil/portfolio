@@ -65,6 +65,7 @@ header {
   margin-top: 45px;
   width: 20%;
   position: fixed;
+  right: 15px;
   div {
     width: 100%;
   }
@@ -74,6 +75,7 @@ header {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  margin-top: 25px;
 }
 .project {
   width: 95%;
@@ -187,11 +189,12 @@ p {
   .content {
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   }
   .projects {
     width: 100%;
     margin: 0;
-    margin-top: 25px;
+    // margin-top: 25px;
     margin-bottom: 20px;
   }
   .project {
@@ -205,10 +208,13 @@ p {
     height: auto;
     position: relative;
     margin: 0;
+    margin-top: 45px;
+    margin-bottom: 0;
+    right: 0;
   }
   .responsive {
     clear: both;
-    border-top: 3px solid $accent;
+    border-bottom: 3px solid $accent;
     width: 100%;
     display: inline-block;
     position: relative;
@@ -235,11 +241,12 @@ p {
     justify-content: center;
     padding: 5px;
     margin: 0;
+    margin-top: 0;
   }
   .projects {
     width: 100%;
     margin: 0;
-    margin-top: 25px;
+    // margin-top: 25px;
     margin-bottom: 20px;
   }
   .project {
@@ -252,13 +259,16 @@ p {
     width: 100%;
     height: auto;
     position: relative;
+    right: 0;
     margin: 0;
+    margin-top: 45px;
+    margin-bottom: 0;
     padding: 0;
   }
   .responsive {
     width: 100%;
     clear: both;
-    border-top: 1px solid $accent;
+    border-bottom: 1px solid $accent;
     display: inline-block;
     position: relative;
   }
