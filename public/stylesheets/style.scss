@@ -185,6 +185,7 @@ p {
     flex-flow: row nowrap;
     align-items: center;
     text-align: justify;
+    font-size: 1.4em;
   }
   .content {
     display: flex;
@@ -211,6 +212,10 @@ p {
     margin-top: 45px;
     margin-bottom: 0;
     right: 0;
+    p {
+      margin: 10px;
+      padding: 0;
+    }
   }
   .responsive {
     clear: both;
@@ -235,6 +240,7 @@ p {
     text-align: justify;
     margin: 0;
     padding: 0;
+    font-size: 1.4em;
   }
   .content {
     flex-direction: column;
@@ -264,6 +270,10 @@ p {
     margin-top: 45px;
     margin-bottom: 0;
     padding: 0;
+    p {
+      margin: 10px;
+      padding: 0;
+    }
   }
   .responsive {
     width: 100%;
