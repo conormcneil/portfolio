@@ -14,6 +14,7 @@ body {
   margin-top: 15px;
   padding: 0;
   width: 100%;
+  // min-width: 410px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -159,6 +160,14 @@ p {
   flex-direction: column;
   align-items: center;
 }
+header {
+  .desktop-responsive {
+    flex-direction: row;
+    * {
+      padding: 10px;
+    }
+  }
+}
 .menu {
   background: rgba($secondary,1);
   color: rgba(white,0.87);
@@ -174,6 +183,55 @@ p {
   }
   p {
     text-align: center;
+  }
+}
+.resume {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    font-size: 0.8em;
+  }
+  .title {
+    margin-top: 35px;
+  }
+  .contact-info {
+    .address {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .contact-header {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      .contact-phone, .contact-website {
+        text-align: right;
+      }
+      .contact-separator {
+        width: 5px;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        width: 46%;
+      }
+    }
+  }
+  .technical-skills {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      font-size: 0.8em;
+    }
   }
 }
 
@@ -244,6 +302,16 @@ p {
     margin: 0;
     padding: 0;
     font-size: 1.4em;
+  }
+  header {
+    .site-title {
+      margin: 0;
+      padding: 0;
+    }
+    .menu-icon {
+      margin: 0;
+      padding: 0;
+    }
   }
   .content {
     flex-direction: column;

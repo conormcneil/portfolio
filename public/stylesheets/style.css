@@ -131,6 +131,11 @@ p {
   flex-direction: column;
   align-items: center; }
 
+header .desktop-responsive {
+  flex-direction: row; }
+  header .desktop-responsive * {
+    padding: 10px; }
+
 .menu {
   background: #00bfa5;
   color: rgba(255, 255, 255, 0.87);
@@ -145,6 +150,43 @@ p {
     margin-top: 60px; }
   .menu p {
     text-align: center; }
+
+.resume {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .resume p {
+    font-size: 0.8em; }
+  .resume .title {
+    margin-top: 35px; }
+  .resume .contact-info .address {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center; }
+  .resume .contact-info .contact-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .resume .contact-info .contact-header .contact-phone, .resume .contact-info .contact-header .contact-website {
+      text-align: right; }
+    .resume .contact-info .contact-header .contact-separator {
+      width: 5px; }
+    .resume .contact-info .contact-header p {
+      margin: 0;
+      padding: 0;
+      width: 46%; }
+  .resume .technical-skills {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .resume .technical-skills ul {
+      padding: 0;
+      margin: 0; }
+    .resume .technical-skills li {
+      font-size: 0.8em; }
 
 @media (max-width: 800px) and (min-width: 451px) {
   body {
@@ -206,6 +248,13 @@ p {
     margin: 0;
     padding: 0;
     font-size: 1.4em; }
+
+  header .site-title {
+    margin: 0;
+    padding: 0; }
+  header .menu-icon {
+    margin: 0;
+    padding: 0; }
 
   .content {
     flex-direction: column;

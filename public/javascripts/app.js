@@ -8,9 +8,9 @@ app.config(["$routeProvider","$locationProvider",function($routeProvider,$locati
     // .when('/contact', {
     //   templateUrl: 'partials/contact.html'
     // })
-    // .when('/resume', {
-    //   templateUrl: 'partials/resume.html'
-    // })
+    .when('/resume', {
+      templateUrl: 'partials/resume.html'
+    })
     .otherwise({
       redirectTo: '/'
     });
