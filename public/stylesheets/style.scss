@@ -191,7 +191,7 @@ header {
   flex-direction: column;
   align-items: center;
   p {
-    font-size: 0.8em;
+    // font-size: 0.8em;
   }
   .title {
     margin-top: 35px;
@@ -230,7 +230,19 @@ header {
       margin: 0;
     }
     li {
-      font-size: 0.8em;
+      // font-size: 0.8em;
+    }
+  }
+  .resume-projects, .resume-educations, .resume-work-experiences {
+    .resume-project:not(:first-child), .resume-education:not(:first-child), .resume-work-experience:not(:first-child) {
+      margin-top: 10px;
+    }
+    .resume-project, .resume-education, .resume-work-experience {
+      margin-bottom: 10px;
+      p {
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 }

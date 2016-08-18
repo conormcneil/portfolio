@@ -156,8 +156,6 @@ header .desktop-responsive {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .resume p {
-    font-size: 0.8em; }
   .resume .title {
     margin-top: 35px; }
   .resume .contact-info .address {
@@ -185,8 +183,13 @@ header .desktop-responsive {
     .resume .technical-skills ul {
       padding: 0;
       margin: 0; }
-    .resume .technical-skills li {
-      font-size: 0.8em; }
+  .resume .resume-projects .resume-project:not(:first-child), .resume .resume-projects .resume-education:not(:first-child), .resume .resume-projects .resume-work-experience:not(:first-child), .resume .resume-educations .resume-project:not(:first-child), .resume .resume-educations .resume-education:not(:first-child), .resume .resume-educations .resume-work-experience:not(:first-child), .resume .resume-work-experiences .resume-project:not(:first-child), .resume .resume-work-experiences .resume-education:not(:first-child), .resume .resume-work-experiences .resume-work-experience:not(:first-child) {
+    margin-top: 10px; }
+  .resume .resume-projects .resume-project, .resume .resume-projects .resume-education, .resume .resume-projects .resume-work-experience, .resume .resume-educations .resume-project, .resume .resume-educations .resume-education, .resume .resume-educations .resume-work-experience, .resume .resume-work-experiences .resume-project, .resume .resume-work-experiences .resume-education, .resume .resume-work-experiences .resume-work-experience {
+    margin-bottom: 10px; }
+    .resume .resume-projects .resume-project p, .resume .resume-projects .resume-education p, .resume .resume-projects .resume-work-experience p, .resume .resume-educations .resume-project p, .resume .resume-educations .resume-education p, .resume .resume-educations .resume-work-experience p, .resume .resume-work-experiences .resume-project p, .resume .resume-work-experiences .resume-education p, .resume .resume-work-experiences .resume-work-experience p {
+      margin: 0;
+      padding: 0; }
 
 @media (max-width: 800px) and (min-width: 451px) {
   body {
