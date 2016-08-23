@@ -71,6 +71,10 @@ header {
     width: 100%;
   }
 }
+.about-me-headshot {
+  width: 100px;
+  border-radius: 40px;
+}
 .projects {
   width: 78%;
   display: flex;
@@ -229,9 +233,9 @@ header {
       padding: 0;
       margin: 0;
     }
-    li {
-      // font-size: 0.8em;
-    }
+    // li {
+    //  font-size: 0.8em;
+    // }
   }
   .resume-projects, .resume-educations, .resume-work-experiences {
     .resume-project:not(:first-child), .resume-education:not(:first-child), .resume-work-experience:not(:first-child) {
@@ -288,6 +292,9 @@ header {
     p {
       margin: 10px;
       padding: 0;
+    }
+    .about-me-headshot {
+      display: none;
     }
   }
   .responsive {
@@ -359,6 +366,9 @@ header {
       margin-top: 10px;
       margin-bottom: 10px;
       padding: 0;
+    }
+    .about-me-headshot {
+      display: none;
     }
   }
   .responsive {
