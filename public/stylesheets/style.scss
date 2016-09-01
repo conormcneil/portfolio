@@ -41,9 +41,11 @@ header {
   height: 50px;
   font-size: 1.2em;
   padding: 10px;
+  .header-right {
+    margin-right: 15px;
+  }
   .site-title {
-    width: 200px;
-    margin-right: 20px;
+    // width: 200px;
     display: inline-block;
     text-align: right;
   }
@@ -326,6 +328,7 @@ header {
     .site-title {
       margin: 0;
       padding: 0;
+      width: auto;
     }
     .menu-icon {
       margin: 0;
