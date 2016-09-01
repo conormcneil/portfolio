@@ -67,6 +67,10 @@ header {
   width: 20%;
   position: fixed;
   right: 15px;
+  text-shadow: 1px 1px 8px grey;
+  img {
+    box-shadow: 1px 1px 3px 1px grey;
+  }
   div {
     width: 100%;
   }
