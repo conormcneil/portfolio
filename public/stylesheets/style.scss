@@ -14,7 +14,6 @@ body {
   margin-top: 15px;
   padding: 0;
   width: 100%;
-  // min-width: 410px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -45,7 +44,6 @@ header {
     margin-right: 15px;
   }
   .site-title {
-    // width: 200px;
     display: inline-block;
     text-align: right;
   }
@@ -196,9 +194,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  p {
-    // font-size: 0.8em;
-  }
   .title {
     margin-top: 35px;
   }
@@ -235,15 +230,12 @@ header {
       padding: 0;
       margin: 0;
     }
-    // li {
-    //  font-size: 0.8em;
-    // }
   }
-  .resume-projects, .resume-educations, .resume-work-experiences {
-    .resume-project:not(:first-child), .resume-education:not(:first-child), .resume-work-experience:not(:first-child) {
+  .resume-section {
+    .resume-item:not(:first-child) {
       margin-top: 10px;
     }
-    .resume-project, .resume-education, .resume-work-experience {
+    .resume-item {
       margin-bottom: 10px;
       p {
         margin: 0;

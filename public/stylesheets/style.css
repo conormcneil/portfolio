@@ -30,9 +30,9 @@ header {
   height: 50px;
   font-size: 1.2em;
   padding: 10px; }
+  header .header-right {
+    margin-right: 15px; }
   header .site-title {
-    width: 200px;
-    margin-right: 20px;
     display: inline-block;
     text-align: right; }
   header .menu-icon {
@@ -187,11 +187,11 @@ header .desktop-responsive {
     .resume .technical-skills ul {
       padding: 0;
       margin: 0; }
-  .resume .resume-projects .resume-project:not(:first-child), .resume .resume-projects .resume-education:not(:first-child), .resume .resume-projects .resume-work-experience:not(:first-child), .resume .resume-educations .resume-project:not(:first-child), .resume .resume-educations .resume-education:not(:first-child), .resume .resume-educations .resume-work-experience:not(:first-child), .resume .resume-work-experiences .resume-project:not(:first-child), .resume .resume-work-experiences .resume-education:not(:first-child), .resume .resume-work-experiences .resume-work-experience:not(:first-child) {
+  .resume .resume-section .resume-item:not(:first-child) {
     margin-top: 10px; }
-  .resume .resume-projects .resume-project, .resume .resume-projects .resume-education, .resume .resume-projects .resume-work-experience, .resume .resume-educations .resume-project, .resume .resume-educations .resume-education, .resume .resume-educations .resume-work-experience, .resume .resume-work-experiences .resume-project, .resume .resume-work-experiences .resume-education, .resume .resume-work-experiences .resume-work-experience {
+  .resume .resume-section .resume-item {
     margin-bottom: 10px; }
-    .resume .resume-projects .resume-project p, .resume .resume-projects .resume-education p, .resume .resume-projects .resume-work-experience p, .resume .resume-educations .resume-project p, .resume .resume-educations .resume-education p, .resume .resume-educations .resume-work-experience p, .resume .resume-work-experiences .resume-project p, .resume .resume-work-experiences .resume-education p, .resume .resume-work-experiences .resume-work-experience p {
+    .resume .resume-section .resume-item p {
       margin: 0;
       padding: 0; }
 
@@ -260,7 +260,8 @@ header .desktop-responsive {
 
   header .site-title {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    width: auto; }
   header .menu-icon {
     margin: 0;
     padding: 0; }
