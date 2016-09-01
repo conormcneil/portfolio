@@ -22,7 +22,7 @@ app.service('ProjectService', function() {
             github: 'https://github.com/sean-xd'
           }
         ],
-        technologies: ['Angular.js','HTML5','CSS3'],
+        technologies: ['Angular.js','Node.js','Express.js','PostgreSQL','HTML5','CSS3'],
         screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1470671326/Screen_Shot_2016-08-08_at_9.48.08_AM_y6brq3.png',
         description: 'Divide Yourself is an outdoor adventure app intended to motivate and inspire people explore their greater backyards. The application allows users to share photos of their outdoor experiences and geotag the location. Other users can then see what types of activities exist nearby and can explore those areas themselves.'
       },
@@ -47,7 +47,7 @@ app.service('ProjectService', function() {
       title: 'Follow the Money',
       url: 'https://followthemoney.firebaseapp.com/',
       collaborators: [],
-      technologies: ['JavaScript','HTML5','CSS3'],
+      technologies: ['jQuery.js','JavaScript','HTML5','CSS3'],
       screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1467838947/Screen_Shot_2016-07-06_at_2.58.35_PM_dmqmtm.png',
       description: 'Many people are concerned with the amount of money making its way through our political system, though few of us are able to track where the money comes from. Follow the Money attempts to increase awareness by allowing users to track how much money specific members of Congress are spending in their election campaigns and which Congressional committees are funding them. The application was designed using JavaScript, HTMl5, CSS3, and SASS.'
     }]

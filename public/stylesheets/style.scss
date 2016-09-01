@@ -246,6 +246,13 @@ header {
 }
 
 
+// if less than 925px wide: change about-me font-size
+@media (max-width: 925px) and (min-width: 801px) {
+  .about-me {
+    font-size: 0.95em;
+  }
+}
+
 // if less than 800px wide:
 @media (max-width: 800px) and (min-width: 451px) {
   body {

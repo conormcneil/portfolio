@@ -195,6 +195,9 @@ header .desktop-responsive {
       margin: 0;
       padding: 0; }
 
+@media (max-width: 925px) and (min-width: 801px) {
+  .about-me {
+    font-size: 0.95em; } }
 @media (max-width: 800px) and (min-width: 451px) {
   body {
     display: flex;
