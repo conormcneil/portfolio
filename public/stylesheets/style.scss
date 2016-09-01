@@ -239,11 +239,11 @@ header {
     //  font-size: 0.8em;
     // }
   }
-  .resume-projects, .resume-educations, .resume-work-experiences {
-    .resume-project:not(:first-child), .resume-education:not(:first-child), .resume-work-experience:not(:first-child) {
+  .resume-section {
+    .resume-item:not(:first-child) {
       margin-top: 10px;
     }
-    .resume-project, .resume-education, .resume-work-experience {
+    .resume-item {
       margin-bottom: 10px;
       p {
         margin: 0;
