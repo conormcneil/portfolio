@@ -196,6 +196,9 @@ header .desktop-responsive {
       margin: 0;
       padding: 0; }
 
+.cert {
+  margin-left: -11px; }
+
 @media (max-width: 925px) and (min-width: 801px) {
   .about-me {
     font-size: 0.95em; } }
