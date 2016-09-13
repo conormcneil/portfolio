@@ -40,6 +40,7 @@ header {
   height: 50px;
   font-size: 1.2em;
   padding: 10px;
+  z-index: 999;
   .header-right {
     margin-right: 15px;
   }
@@ -90,6 +91,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    position: relative;
   }
   .collaborators {
     display: flex;
@@ -106,7 +108,7 @@ header {
       padding-right: 5px;
     }
   }
-  .technologies {
+  .technologies, .github {
     margin-top: 15px;
     * {
       margin: 0;

@@ -4,6 +4,7 @@ app.service('ProjectService', function() {
       {
         title: 'Farmer\'s Table',
         url: 'https://farmerstable.herokuapp.com/',
+        github: 'https://github.com/conormcneil/farmerstable',
         technologies: ['Angular.js','Node.js','Express.js','PostgreSQL','Sass','TDD (Intern/Jasmine)','Google Maps API','Angular Google Maps'],
         screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1473439545/farmers-table_owjmhx.png',
         description: 'Farmer\'s Table is designed to connect local farmer\'s with their communities by digitizing CSAs and providing a space for customers to communicate and connect directly with their local farmers. In this way, users can engage in their local food systems, support local economies, and receive access to healthy, fresh food, often at a lower price than what one may find at conventional grocery stores. The goal is that users will become more aware of where their food comes from and how much purchasing power consumers wield.'
@@ -11,6 +12,7 @@ app.service('ProjectService', function() {
       {
         title: 'Divide Yourself',
         url: 'https://divideq3.herokuapp.com/',
+        github: 'https://github.com/KaneLabs/divideyourselfq3',
         collaborators: [
           {
             name: 'Ryan Kane',
@@ -36,6 +38,7 @@ app.service('ProjectService', function() {
       {
       title: 'Finding Fido',
       url: 'https://findingfido.herokuapp.com/',
+      github: 'https://github.com/conormcneil/lostpets',
       collaborators: [
         {
           name: 'Lizzie Szoke',
@@ -53,6 +56,7 @@ app.service('ProjectService', function() {
     {
       title: 'Follow the Money',
       url: 'https://followthemoney.firebaseapp.com/',
+      github: 'https://github.com/conormcneil/q1project',
       collaborators: [],
       technologies: ['jQuery.js','JavaScript','HTML5','CSS3'],
       screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1467838947/Screen_Shot_2016-07-06_at_2.58.35_PM_dmqmtm.png',
