@@ -90,7 +90,7 @@ ck-home {
   margin: 0;
   padding: 0;
   margin-top: 100px;
-  background: rgba(3, 169, 244, 0.87);
+  background: rgba(2, 119, 189, 0.87);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +119,7 @@ ck-projects {
       max-width: 400px; }
 
 ck-about-me {
-  background: rgba(3, 169, 244, 0.87);
+  background: rgba(2, 119, 189, 0.87);
   height: calc(50vh - 100px);
   width: 100vw; }
 
@@ -127,7 +127,7 @@ ck-footer {
   margin: 0;
   padding: 0;
   height: 71px;
-  background: #03a9f4;
+  background: #0277bd;
   width: 100vw;
   text-align: center; }
 

@@ -8,7 +8,8 @@ $font1: 'Exo 2', sans-serif;
 // $primary: rgba(33,150,243,0.87);
 $primary: rgba(255,255,255,1);
 // $secondary: rgba(13,71,161,0.87);
-$secondary: rgba(3,169,244,0.87);
+// $secondary: rgba(3,169,244,0.87);
+$secondary: rgba(2,119,189,0.87);
 $grey: rgba(120,144,156,1);
 // $accent: rgba(163,0,146,1);
 $accent: rgba(255,193,7,1);
@@ -19,12 +20,7 @@ $accent: rgba(255,193,7,1);
 }
 body {
   margin: 0;
-  // margin-top: 15px;
   padding: 0;
-  // width: 100%;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: center;
   color: $primary;
   font: {
     family: $font1;
@@ -116,14 +112,8 @@ header {
 }
 
 .fullscreen {
-  // position: absolute;
-  // left: 0;
   height: calc(100vh - 100px);
   width: 100vw;
-}
-.halfscreen {
-  // position: absolute;
-  // left: 0;
 }
 
 ck-home {
