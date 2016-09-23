@@ -1,18 +1,10 @@
 // Variables
 $font1: 'Exo 2', sans-serif;
 // Material Palette
-// $primary: rgba(0,150,136,0.87); // original 1
-// $secondary: rgba(0,191,165,0.87); // original 2
-// $accent: rgba(163,0,146,1); // original 3
-
-// $primary: rgba(33,150,243,0.87);
-$primary: rgba(255,255,255,1);
-// $secondary: rgba(13,71,161,0.87);
-// $secondary: rgba(3,169,244,0.87);
-$secondary: rgba(2,119,189,0.87);
-$grey: rgba(120,144,156,1);
+$primary: rgba(2,119,189,0.87);
+$secondary: rgba(120,144,156,1);
 // $accent: rgba(163,0,146,1);
-$accent: rgba(255,193,7,1);
+// $accent: rgba(255,193,7,1);
 
 
 ::-webkit-scrollbar {
@@ -33,27 +25,19 @@ a {
 .menu-icon-back {
   padding-left: 15px;
 }
-.screenshot {
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 1px 2px 3px 3px #4c4c4c;
-}
 p {
   cursor: default;
 }
 .pointer {
   cursor: pointer;
 }
-.shadow {
-  text-shadow: 0px 2px 4px #4c4c4c;
-}
-.accent {
-  color: $accent;
-  font-variant: small-caps;
-}
-.responsive {
-  clear: both;
-}
+// .accent {
+//   color: $accent;
+//   font-variant: small-caps;
+// }
+// .responsive {
+//   clear: both;
+// }
 .mobile-responsive {
   display: none;
 }
@@ -64,7 +48,9 @@ p {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-
+.text-shadow {
+  text-shadow: 0px 2px 4px #4c4c4c;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -73,7 +59,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba($grey,0.93);
+  background: rgba($secondary,0.93);
   color: white;
   position: fixed;
   left: 0;
@@ -110,17 +96,15 @@ header {
     }
   }
 }
-
 .fullscreen {
   height: calc(100vh - 100px);
-  width: 100vw;
 }
-
 ck-home {
   margin: 0;
   padding: 0;
   margin-top: 100px;
-  background: $secondary;
+  background: $primary;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,179 +119,205 @@ ck-projects {
   padding: 0;
   top: 100vh;
   background: white;
-  color: black;
+  color: $primary;
   display: flex;
   align-items: center;
   flex-direction: column;
-  .projects-new {
-    width: 100vw;
+  .projects {
+    width: 70vw;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    .project-new {
+    .project {
       max-width: 400px;
+      .screenshot {
+        width: 100%;
+      }
     }
   }
 }
 ck-about-me {
-  background: $secondary;
-  // display: flex;
-  // justify-content: center;
-  height: calc(50vh - 100px);
-  width: 100vw;
+  background: $primary;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 45%;
+    p {
+      font-size: 1.3em;
+    }
+  }
+  button {
+    height: 80px;
+    padding: 15px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1.5em;
+  }
+  button:active {
+    box-shadow: none;
+  }
 }
 ck-footer {
   margin: 0;
   padding: 0;
   height: 71px;
-  background: rgba($secondary,1);
+  background: $secondary;
   width: 100vw;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 
-// if less than 925px wide: change about-me font-size
-@media (max-width: 925px) and (min-width: 801px) {
-  .about-me {
-    font-size: 0.95em;
-  }
-}
-
-// if less than 800px wide:
-@media (max-width: 800px) and (min-width: 451px) {
-  body {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    text-align: justify;
-    font-size: 1.4em;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-  }
-  .projects {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  .project {
-    width: 100%;
-    .title a {
-      margin-top: -15px;
-      padding-top: -15px;
-    }
-  }
-  .screenshot {
-    width: 100%;
-  }
-  .about-me {
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin: 0;
-    margin-top: 45px;
-    margin-bottom: 0;
-    right: 0;
-    p {
-      margin: 10px;
-      padding: 0;
-    }
-    .about-me-headshot {
-      display: none;
-    }
-  }
-  .responsive {
-    clear: both;
-    border-bottom: 3px solid $accent;
-    width: 100%;
-    display: inline-block;
-    position: relative;
-  }
-  .mobile-responsive {
-    display: inline-block;
-  }
-  .desktop-responsive {
-    display: none;
-  }
-}
-// if mobile (less than 450px wide):
-@media (max-width: 450px) {emon
-
-  body {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    text-align: justify;
-    margin: 0;
-    padding: 0;
-    font-size: 1.4em;
-  }
-  header {
-    .site-title {
-      margin: 0;
-      padding: 0;
-      width: auto;
-    }
-    .menu-icon {
-      margin: 0;
-      padding: 0;
-    }
-  }
-  .content {
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px;
-    margin: 0;
-    margin-top: 0;
-  }
-  .projects {
-    width: 100%;
-    margin: 0;
-  }
-  .project {
-    width: 100%;
-    .title a {
-      margin-top: -20px;
-      padding-top: -20px;
-    }
-  }
-  .screenshot {
-    width: 100%;
-  }
-  .about-me {
-    width: 100%;
-    height: auto;
-    position: relative;
-    right: 0;
-    margin: 0;
-    margin-top: 45px;
-    margin-bottom: 0;
-    padding: 0;
-    p {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      padding: 0;
-    }
-    .about-me-headshot {
-      display: none;
-    }
-  }
-  .responsive {
-    width: 100%;
-    clear: both;
-    border-bottom: 2px solid $accent;
-    display: inline-block;
-    position: relative;
-  }
-  .mobile-responsive {
-    display: inline-block;
-  }
-  .desktop-responsive {
-    display: none;
-  }
-}
+// // if less than 925px wide: change about-me font-size
+// @media (max-width: 925px) and (min-width: 801px) {
+//   .about-me {
+//     font-size: 0.95em;
+//   }
+// }
+//
+// // if less than 800px wide:
+// @media (max-width: 800px) and (min-width: 451px) {
+//   body {
+//     display: flex;
+//     flex-flow: row nowrap;
+//     align-items: center;
+//     text-align: justify;
+//     font-size: 1.4em;
+//   }
+//   .content {
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 0;
+//   }
+//   .projects {
+//     width: 100%;
+//     margin: 0;
+//     margin-bottom: 20px;
+//   }
+//   .project {
+//     width: 100%;
+//     .title a {
+//       margin-top: -15px;
+//       padding-top: -15px;
+//     }
+//   }
+//   .screenshot {
+//     width: 100%;
+//   }
+//   .about-me {
+//     width: 100%;
+//     height: auto;
+//     position: relative;
+//     margin: 0;
+//     margin-top: 45px;
+//     margin-bottom: 0;
+//     right: 0;
+//     p {
+//       margin: 10px;
+//       padding: 0;
+//     }
+//     .about-me-headshot {
+//       display: none;
+//     }
+//   }
+//   .responsive {
+//     clear: both;
+//     // border-bottom: 3px solid $accent;
+//     width: 100%;
+//     display: inline-block;
+//     position: relative;
+//   }
+//   .mobile-responsive {
+//     display: inline-block;
+//   }
+//   .desktop-responsive {
+//     display: none;
+//   }
+// }
+// // if mobile (less than 450px wide):
+// @media (max-width: 450px) {
+//
+//   body {
+//     display: flex;
+//     flex-flow: column nowrap;
+//     align-items: center;
+//     text-align: justify;
+//     margin: 0;
+//     padding: 0;
+//     font-size: 1.4em;
+//   }
+//   header {
+//     .site-title {
+//       margin: 0;
+//       padding: 0;
+//       width: auto;
+//     }
+//     .menu-icon {
+//       margin: 0;
+//       padding: 0;
+//     }
+//   }
+//   .content {
+//     flex-direction: column;
+//     justify-content: center;
+//     padding: 5px;
+//     margin: 0;
+//     margin-top: 0;
+//   }
+//   .projects {
+//     width: 100%;
+//     margin: 0;
+//   }
+//   .project {
+//     width: 100%;
+//     .title a {
+//       margin-top: -20px;
+//       padding-top: -20px;
+//     }
+//   }
+//   .screenshot {
+//     width: 100%;
+//   }
+//   .about-me {
+//     width: 100%;
+//     height: auto;
+//     position: relative;
+//     right: 0;
+//     margin: 0;
+//     margin-top: 45px;
+//     margin-bottom: 0;
+//     padding: 0;
+//     p {
+//       margin-top: 10px;
+//       margin-bottom: 10px;
+//       padding: 0;
+//     }
+//     .about-me-headshot {
+//       display: none;
+//     }
+//   }
+//   .responsive {
+//     width: 100%;
+//     clear: both;
+//     // border-bottom: 2px solid $accent;
+//     display: inline-block;
+//     position: relative;
+//   }
+//   .mobile-responsive {
+//     display: inline-block;
+//   }
+//   .desktop-responsive {
+//     display: none;
+//   }
+// }

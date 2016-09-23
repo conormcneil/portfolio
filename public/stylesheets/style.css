@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  color: white;
+  color: rgba(2, 119, 189, 0.87);
   font-family: "Exo 2", sans-serif; }
 
 a {
@@ -14,26 +14,11 @@ a {
 .menu-icon-back {
   padding-left: 15px; }
 
-.screenshot {
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 1px 2px 3px 3px #4c4c4c; }
-
 p {
   cursor: default; }
 
 .pointer {
   cursor: pointer; }
-
-.shadow {
-  text-shadow: 0px 2px 4px #4c4c4c; }
-
-.accent {
-  color: #ffc107;
-  font-variant: small-caps; }
-
-.responsive {
-  clear: both; }
 
 .mobile-responsive {
   display: none; }
@@ -42,6 +27,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.text-shadow {
+  text-shadow: 0px 2px 4px #4c4c4c; }
 
 body {
   display: flex;
@@ -83,14 +71,14 @@ header {
       padding: 0; }
 
 .fullscreen {
-  height: calc(100vh - 100px);
-  width: 100vw; }
+  height: calc(100vh - 100px); }
 
 ck-home {
   margin: 0;
   padding: 0;
   margin-top: 100px;
   background: rgba(2, 119, 189, 0.87);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,155 +92,54 @@ ck-projects {
   padding: 0;
   top: 100vh;
   background: white;
-  color: black;
+  color: rgba(2, 119, 189, 0.87);
   display: flex;
   align-items: center;
   flex-direction: column; }
-  ck-projects .projects-new {
-    width: 100vw;
+  ck-projects .projects {
+    width: 70vw;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center; }
-    ck-projects .projects-new .project-new {
+    ck-projects .projects .project {
       max-width: 400px; }
+      ck-projects .projects .project .screenshot {
+        width: 100%; }
 
 ck-about-me {
   background: rgba(2, 119, 189, 0.87);
-  height: calc(50vh - 100px);
-  width: 100vw; }
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-flow: column; }
+  ck-about-me div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 45%; }
+    ck-about-me div p {
+      font-size: 1.3em; }
+  ck-about-me button {
+    height: 80px;
+    padding: 15px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1.5em; }
+  ck-about-me button:active {
+    box-shadow: none; }
 
 ck-footer {
   margin: 0;
   padding: 0;
   height: 71px;
-  background: #0277bd;
+  background: #78909c;
   width: 100vw;
-  text-align: center; }
-
-@media (max-width: 925px) and (min-width: 801px) {
-  .about-me {
-    font-size: 0.95em; } }
-@media (max-width: 800px) and (min-width: 451px) {
-  body {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    text-align: justify;
-    font-size: 1.4em; }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0; }
-
-  .projects {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 20px; }
-
-  .project {
-    width: 100%; }
-    .project .title a {
-      margin-top: -15px;
-      padding-top: -15px; }
-
-  .screenshot {
-    width: 100%; }
-
-  .about-me {
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin: 0;
-    margin-top: 45px;
-    margin-bottom: 0;
-    right: 0; }
-    .about-me p {
-      margin: 10px;
-      padding: 0; }
-    .about-me .about-me-headshot {
-      display: none; }
-
-  .responsive {
-    clear: both;
-    border-bottom: 3px solid #ffc107;
-    width: 100%;
-    display: inline-block;
-    position: relative; }
-
-  .mobile-responsive {
-    display: inline-block; }
-
-  .desktop-responsive {
-    display: none; } }
-@media (max-width: 450px) {
-  emon
-  body {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    text-align: justify;
-    margin: 0;
-    padding: 0;
-    font-size: 1.4em; }
-
-  header .site-title {
-    margin: 0;
-    padding: 0;
-    width: auto; }
-  header .menu-icon {
-    margin: 0;
-    padding: 0; }
-
-  .content {
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px;
-    margin: 0;
-    margin-top: 0; }
-
-  .projects {
-    width: 100%;
-    margin: 0; }
-
-  .project {
-    width: 100%; }
-    .project .title a {
-      margin-top: -20px;
-      padding-top: -20px; }
-
-  .screenshot {
-    width: 100%; }
-
-  .about-me {
-    width: 100%;
-    height: auto;
-    position: relative;
-    right: 0;
-    margin: 0;
-    margin-top: 45px;
-    margin-bottom: 0;
-    padding: 0; }
-    .about-me p {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      padding: 0; }
-    .about-me .about-me-headshot {
-      display: none; }
-
-  .responsive {
-    width: 100%;
-    clear: both;
-    border-bottom: 2px solid #ffc107;
-    display: inline-block;
-    position: relative; }
-
-  .mobile-responsive {
-    display: inline-block; }
-
-  .desktop-responsive {
-    display: none; } }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
