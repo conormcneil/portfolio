@@ -10,22 +10,22 @@ app
       templateUrl: 'partials/nav.html'
     }
   })
-  .directive('ckProject',function() {
-    return {
-      templateUrl: 'partials/project.html'
-    };
-  })
+  // .directive('ckProject',function() {
+  //   return {
+  //     templateUrl: 'partials/project.html'
+  //   };
+  // })
   // .directive('ckAboutMe',function() {
   //   return {
   //     templateUrl: 'partials/about-me.html'
   //     // controller: makeAboutMeController
   //   };
   // })
-  .directive('ckResume',function() {
-    return {
-      templateUrl: 'partials/resume.html'
-    };
-  })
+  // .directive('ckResume',function() {
+  //   return {
+  //     templateUrl: 'partials/resume.html'
+  //   };
+  // })
   .directive('ckHome',function() {
     return {
       templateUrl: '/partials/home.html'
@@ -33,18 +33,18 @@ app
   })
   .directive('ckProjects',function() {
     return {
-      templateUrl: '/partials/projects-new.html',
+      templateUrl: '/partials/projects.html',
       controller: 'ProjectController'
     }
   })
   .directive('ckProject',function() {
     return {
-      templateUrl: '/partials/project-new.html'
+      templateUrl: '/partials/project.html'
     }
   })
   .directive('ckAboutMe',function() {
     return {
-      templateUrl: '/partials/about-me-new.html'
+      templateUrl: '/partials/about-me.html'
     }
   })
   .directive('ckFooter',function() {

@@ -3,18 +3,49 @@
 
 body {
   margin: 0;
-  margin-top: 15px;
   padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   color: white;
   font-family: "Exo 2", sans-serif; }
 
 a {
   text-decoration: none;
   color: inherit; }
+
+.menu-icon-back {
+  padding-left: 15px; }
+
+.screenshot {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 1px 2px 3px 3px #4c4c4c; }
+
+p {
+  cursor: default; }
+
+.pointer {
+  cursor: pointer; }
+
+.shadow {
+  text-shadow: 0px 2px 4px #4c4c4c; }
+
+.accent {
+  color: #ffc107;
+  font-variant: small-caps; }
+
+.responsive {
+  clear: both; }
+
+.mobile-responsive {
+  display: none; }
+
+.desktop-responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+body {
+  display: flex;
+  flex-direction: column; }
 
 header {
   display: flex;
@@ -51,55 +82,15 @@ header {
       margin: 0;
       padding: 0; }
 
-.menu-icon-back {
-  padding-left: 15px; }
-
-.screenshot {
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 1px 2px 3px 3px #4c4c4c; }
-
-p {
-  cursor: default; }
-
-.pointer {
-  cursor: pointer; }
-
-.shadow {
-  text-shadow: 0px 2px 4px #4c4c4c; }
-
-.accent {
-  color: #ffc107;
-  font-variant: small-caps; }
-
-.responsive {
-  clear: both; }
-
-.mobile-responsive {
-  display: none; }
-
-.desktop-responsive {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .fullscreen {
-  position: absolute;
-  left: 0;
   height: calc(100vh - 100px);
-  width: 100vw; }
-
-.halfscreen {
-  position: absolute;
-  left: 0;
-  height: calc(50vh - 100px);
   width: 100vw; }
 
 ck-home {
   margin: 0;
   padding: 0;
-  top: 100px;
-  background: rgba(13, 71, 161, 0.87);
+  margin-top: 100px;
+  background: rgba(3, 169, 244, 0.87);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,23 +116,18 @@ ck-projects {
     justify-content: space-around;
     align-items: center; }
     ck-projects .projects-new .project-new {
-      width: 400px; }
+      max-width: 400px; }
 
 ck-about-me {
-  margin: 0;
-  padding: 0;
-  top: calc(200vh - 100px);
-  background: rgba(13, 71, 161, 0.87);
-  display: flex;
-  justify-content: center; }
+  background: rgba(3, 169, 244, 0.87);
+  height: calc(50vh - 100px);
+  width: 100vw; }
 
 ck-footer {
   margin: 0;
   padding: 0;
   height: 71px;
-  background: #0d47a1;
-  position: absolute;
-  top: calc(250vh - 200px);
+  background: #03a9f4;
   width: 100vw;
   text-align: center; }
 

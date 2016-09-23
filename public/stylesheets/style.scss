@@ -7,7 +7,8 @@ $font1: 'Exo 2', sans-serif;
 
 // $primary: rgba(33,150,243,0.87);
 $primary: rgba(255,255,255,1);
-$secondary: rgba(13,71,161,0.87);
+// $secondary: rgba(13,71,161,0.87);
+$secondary: rgba(3,169,244,0.87);
 $grey: rgba(120,144,156,1);
 // $accent: rgba(163,0,146,1);
 $accent: rgba(255,193,7,1);
@@ -18,12 +19,12 @@ $accent: rgba(255,193,7,1);
 }
 body {
   margin: 0;
-  margin-top: 15px;
+  // margin-top: 15px;
   padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  // width: 100%;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
   color: $primary;
   font: {
     family: $font1;
@@ -32,6 +33,45 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+.menu-icon-back {
+  padding-left: 15px;
+}
+.screenshot {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 1px 2px 3px 3px #4c4c4c;
+}
+p {
+  cursor: default;
+}
+.pointer {
+  cursor: pointer;
+}
+.shadow {
+  text-shadow: 0px 2px 4px #4c4c4c;
+}
+.accent {
+  color: $accent;
+  font-variant: small-caps;
+}
+.responsive {
+  clear: both;
+}
+.mobile-responsive {
+  display: none;
+}
+.desktop-responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 header {
   display: flex;
@@ -74,58 +114,22 @@ header {
     }
   }
 }
-.menu-icon-back {
-  padding-left: 15px;
-}
-.screenshot {
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 1px 2px 3px 3px #4c4c4c;
-}
-p {
-  cursor: default;
-}
-.pointer {
-  cursor: pointer;
-}
-.shadow {
-  text-shadow: 0px 2px 4px #4c4c4c;
-}
-.accent {
-  color: $accent;
-  font-variant: small-caps;
-}
-.responsive {
-  clear: both;
-}
-.mobile-responsive {
-  display: none;
-}
-.desktop-responsive {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-////////////////////////////////////////////////////////////////////////////////
 
 .fullscreen {
-  position: absolute;
-  left: 0;
+  // position: absolute;
+  // left: 0;
   height: calc(100vh - 100px);
   width: 100vw;
 }
 .halfscreen {
-  position: absolute;
-  left: 0;
-  height: calc(50vh - 100px);
-  width: 100vw;
+  // position: absolute;
+  // left: 0;
 }
 
 ck-home {
   margin: 0;
   padding: 0;
-  top: 100px;
+  margin-top: 100px;
   background: $secondary;
   display: flex;
   justify-content: center;
@@ -153,25 +157,22 @@ ck-projects {
     justify-content: space-around;
     align-items: center;
     .project-new {
-      width: 400px;
+      max-width: 400px;
     }
   }
 }
 ck-about-me {
-  margin: 0;
-  padding: 0;
-  top: calc(200vh - 100px);
   background: $secondary;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  height: calc(50vh - 100px);
+  width: 100vw;
 }
 ck-footer {
   margin: 0;
   padding: 0;
   height: 71px;
   background: rgba($secondary,1);
-  position: absolute;
-  top: calc(250vh - 200px);
   width: 100vw;
   text-align: center;
 }
