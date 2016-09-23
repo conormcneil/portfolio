@@ -78,6 +78,10 @@ header {
     flex-flow: column nowrap;
     justify-content: center;
     position: relative; }
+    .project .title .github-corner {
+      position: absolute;
+      top: 117px;
+      right: 0; }
   .project .collaborators {
     display: flex;
     flex-flow: column nowrap;

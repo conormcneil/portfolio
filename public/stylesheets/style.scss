@@ -92,6 +92,11 @@ header {
     flex-flow: column nowrap;
     justify-content: center;
     position: relative;
+    .github-corner {
+      position: absolute;
+      top: 117px;
+      right: 0;
+    }
   }
   .collaborators {
     display: flex;
@@ -130,7 +135,7 @@ header {
     }
   }
   div {
-    width: 100%
+    width: 100%;
   }
   a {
     text-decoration: none;
