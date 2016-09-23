@@ -54,6 +54,7 @@ p {
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 header {
   display: flex;
@@ -100,6 +101,7 @@ header {
   height: calc(100vh - 100px);
 }
 ck-home {
+  width: 100vw;
   margin: 0;
   padding: 0;
   margin-top: 100px;
@@ -160,15 +162,42 @@ ck-about-me {
     border: 2px solid white;
     border-radius: 5px;
     font-size: 1.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
   }
   button:active {
     box-shadow: none;
   }
 }
+ck-contact-me {
+  background: white;
+  height: 55vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  .contact {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .left {
+
+    }
+    .center {
+
+    }
+    .right {
+
+    }
+  }
+}
 ck-footer {
   margin: 0;
   padding: 0;
-  height: 71px;
+  height: 70px;
   background: $secondary;
   width: 100vw;
   display: flex;

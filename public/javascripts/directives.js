@@ -5,26 +5,10 @@ app
       controller: 'HeaderController'
     };
   })
-  .directive('ckNav',function() {
-    return {
-      templateUrl: 'partials/nav.html'
-    }
-  })
-  // .directive('ckProject',function() {
+  // .directive('ckNav',function() {
   //   return {
-  //     templateUrl: 'partials/project.html'
-  //   };
-  // })
-  // .directive('ckAboutMe',function() {
-  //   return {
-  //     templateUrl: 'partials/about-me.html'
-  //     // controller: makeAboutMeController
-  //   };
-  // })
-  // .directive('ckResume',function() {
-  //   return {
-  //     templateUrl: 'partials/resume.html'
-  //   };
+  //     templateUrl: 'partials/nav.html'
+  //   }
   // })
   .directive('ckHome',function() {
     return {
@@ -37,14 +21,14 @@ app
       controller: 'ProjectController'
     }
   })
-  .directive('ckProject',function() {
-    return {
-      templateUrl: '/partials/project.html'
-    }
-  })
   .directive('ckAboutMe',function() {
     return {
       templateUrl: '/partials/about-me.html'
+    }
+  })
+  .directive('ckContactMe',function() {
+    return {
+      templateUrl: '/partials/contact-me.html'
     }
   })
   .directive('ckFooter',function() {
