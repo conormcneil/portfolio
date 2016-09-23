@@ -1,18 +1,20 @@
-var app = angular.module('projectApp',['ngRoute']);
+var app = angular.module('projectApp',['ui.router']);
 
-app.config(["$routeProvider","$locationProvider",function($routeProvider,$locationProvider) {
-  $routeProvider
-    .when('/',{
+app.config(["$stateProvider","$locationProvider",function($stateProvider,$locationProvider) {
+  $stateProvider
+    .state('portfolio',{
+      url: '/',
       templateUrl: 'partials/projects.html'
     })
     // .when('/contact', {
     //   templateUrl: 'partials/contact.html'
     // })
-    .when('/resume', {
+    .state('resume', {
+      url: '/resume',
       templateUrl: 'partials/resume.html'
     })
-    .otherwise({
-      redirectTo: '/'
-    });
+    // .otherwise({
+    //   redirectTo: '/'
+    // });
   $locationProvider.html5Mode(true);
 }]);

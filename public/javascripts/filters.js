@@ -14,10 +14,10 @@ app.filter('kebab', function () {
     return output.join('');
   };
 });
-app.filter('commaSeparated',function() {
-  return function(input) {
-    console.log(input);
-    console.log('filter');
-    return input;
-  };
-});
+// app.filter('commaSeparated',function() {
+//   return function(input) {
+//     console.log(input);
+//     console.log('filter');
+//     return input;
+//   };
+// });

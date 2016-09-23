@@ -197,9 +197,8 @@ header .desktop-responsive {
     .resume .resume-section .resume-item p {
       margin: 0;
       padding: 0; }
-
-.cert {
-  margin-left: -11px; }
+  .resume .resume-section:last-child {
+    margin-bottom: 50px; }
 
 @media (max-width: 925px) and (min-width: 801px) {
   .about-me {
