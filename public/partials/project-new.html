@@ -1,0 +1,31 @@
+<div class="project">
+  <div class='title'>
+    <a href="{{ project.url }}" target="_blank">
+      <h1 class='shadow'>{{ project.title }}</h1>
+    </a>
+    <!-- <a href="{{ project.github }}" target="_blank"><img ng-src="./images/github-corner-right.svg" class="github-corner"></a> -->
+    <img ng-src="{{ project.screenshot }}" class="screenshot z-depth-3">
+  </div>
+  <div class="collaborators" ng-show="project.collaborators.length > 0">
+    <p class="accent">Collaborators:</p>
+    <div class="collaborator" ng-repeat="collaborator in project.collaborators">
+      <a href="{{collaborator.github}}" class="github-icon" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <p>{{ collaborator.name }}</p>
+    </div>
+  </div>
+  <div class="technologies">
+    <p class="accent">Technologies:</p>
+    <div class="technology">
+      <li ng-repeat="tech in project.technologies">{{ tech }}</li>
+    </div>
+  </div>
+  <div class="github">
+    <p class="accent">Github Repo: <a href="{{project.github}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+  </div>
+  <div class="description">
+    <p class='accent'>Description:</p>
+    <p>{{ project.description }}</p>
+  </div>
+</div>

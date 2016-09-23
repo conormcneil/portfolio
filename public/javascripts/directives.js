@@ -15,12 +15,12 @@ app
       templateUrl: 'partials/project.html'
     };
   })
-  .directive('ckAboutMe',function() {
-    return {
-      templateUrl: 'partials/about-me.html'
-      // controller: makeAboutMeController
-    };
-  })
+  // .directive('ckAboutMe',function() {
+  //   return {
+  //     templateUrl: 'partials/about-me.html'
+  //     // controller: makeAboutMeController
+  //   };
+  // })
   .directive('ckResume',function() {
     return {
       templateUrl: 'partials/resume.html'
@@ -33,6 +33,22 @@ app
   })
   .directive('ckProjects',function() {
     return {
-      templateUrl: '/partials/projects-box.html'
+      templateUrl: '/partials/projects-new.html',
+      controller: 'ProjectController'
+    }
+  })
+  .directive('ckProject',function() {
+    return {
+      templateUrl: '/partials/project-new.html'
+    }
+  })
+  .directive('ckAboutMe',function() {
+    return {
+      templateUrl: '/partials/about-me-new.html'
+    }
+  })
+  .directive('ckFooter',function() {
+    return {
+      templateUrl: '/partials/footer.html'
     }
   });
