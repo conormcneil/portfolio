@@ -2,6 +2,7 @@
   display: none; }
 
 body {
+  background: #78909c;
   margin: 0;
   margin-top: 15px;
   padding: 0;
@@ -9,7 +10,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: rgba(0, 150, 136, 0.87);
+  color: white;
   font-family: "Exo 2", sans-serif; }
 
 a {
@@ -20,26 +21,36 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 150, 136, 0.87);
-  opacity: 0.9;
+  background: rgba(13, 71, 161, 0.93);
   color: white;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  height: 50px;
-  font-size: 1.2em;
+  height: 100px;
+  font-size: 1.8em;
   padding: 10px;
   z-index: 999; }
-  header .header-right {
-    margin-right: 15px; }
   header .site-title {
+    margin-left: 95px;
     display: inline-block;
-    text-align: right; }
+    text-align: right;
+    font-size: 1.5em; }
   header .menu-icon {
     width: 30%;
     margin-left: 20px;
     display: inline-block; }
+  header .header-menu {
+    flex-direction: row;
+    margin-right: 95px; }
+    header .header-menu a, header .header-menu p, header .header-menu i {
+      margin: 0;
+      padding: 0; }
+    header .header-menu p {
+      padding: 10px; }
+    header .header-menu .links {
+      margin: 0;
+      padding: 0; }
 
 .menu-icon-back {
   padding-left: 15px; }
@@ -55,9 +66,9 @@ header {
   width: 20%;
   position: fixed;
   right: 15px;
-  text-shadow: 0px 0.5px 1px grey; }
+  text-shadow: 0px 0.5px 3px #4c4c4c; }
   .about-me img {
-    box-shadow: 1px 1px 3px 1px grey; }
+    box-shadow: 1px 2px 4px 4px #4c4c4c; }
 
 .about-me-headshot {
   width: 100px;
@@ -73,7 +84,6 @@ header {
 .project {
   width: 95%; }
   .project .title {
-    color: rgba(0, 150, 136, 0.87);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -116,7 +126,7 @@ header {
 .screenshot {
   width: 100%;
   margin: 0 auto;
-  box-shadow: 1px 1px 1px 1px grey; }
+  box-shadow: 1px 2px 3px 3px #4c4c4c; }
 
 p {
   cursor: default; }
@@ -125,10 +135,10 @@ p {
   cursor: pointer; }
 
 .shadow {
-  text-shadow: 0px 2px 2px grey; }
+  text-shadow: 0px 2px 4px #4c4c4c; }
 
 .accent {
-  color: #a30092;
+  color: #ffc107;
   font-variant: small-caps; }
 
 .responsive {
@@ -142,13 +152,14 @@ p {
   flex-direction: column;
   align-items: center; }
 
-header .desktop-responsive {
-  flex-direction: row; }
-  header .desktop-responsive * {
-    padding: 10px; }
+.fullscreen {
+  position: absolute;
+  left: 0;
+  height: calc(100vh - 100px);
+  width: 100vw; }
 
 .menu {
-  background: #00bfa5;
+  background: #0d47a1;
   color: rgba(255, 255, 255, 0.87);
   width: 100px;
   height: 100%;
@@ -204,6 +215,16 @@ header .desktop-responsive {
   .resume .resume-section:last-child {
     margin-bottom: 50px; }
 
+ck-home {
+  margin: 0;
+  padding: 0;
+  top: 100px; }
+
+ck-projects {
+  margin: 0;
+  padding: 0;
+  top: 100vh; }
+
 @media (max-width: 925px) and (min-width: 801px) {
   .about-me {
     font-size: 0.95em; } }
@@ -250,7 +271,7 @@ header .desktop-responsive {
 
   .responsive {
     clear: both;
-    border-bottom: 3px solid #a30092;
+    border-bottom: 3px solid #ffc107;
     width: 100%;
     display: inline-block;
     position: relative; }
@@ -318,7 +339,7 @@ header .desktop-responsive {
   .responsive {
     width: 100%;
     clear: both;
-    border-bottom: 2px solid #a30092;
+    border-bottom: 2px solid #ffc107;
     display: inline-block;
     position: relative; }
 

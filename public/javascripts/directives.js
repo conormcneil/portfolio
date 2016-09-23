@@ -25,4 +25,14 @@ app
     return {
       templateUrl: 'partials/resume.html'
     };
+  })
+  .directive('ckHome',function() {
+    return {
+      templateUrl: '/partials/home.html'
+    }
+  })
+  .directive('ckProjects',function() {
+    return {
+      templateUrl: '/partials/projects-box.html'
+    }
   });

@@ -1,15 +1,22 @@
 // Variables
 $font1: 'Exo 2', sans-serif;
 // Material Palette
-$primary: rgba(0,150,136,0.87);
-$secondary: rgba(0,191,165,0.87);
-$accent: rgba(163,0,146,1);
+// $primary: rgba(0,150,136,0.87); // original 1
+// $secondary: rgba(0,191,165,0.87); // original 2
+// $accent: rgba(163,0,146,1); // original 3
+
+// $primary: rgba(33,150,243,0.87);
+$primary: rgba(255,255,255,1);
+$secondary: rgba(13,71,161,0.87);
+// $accent: rgba(163,0,146,1);
+$accent: rgba(255,193,7,1);
 
 
 ::-webkit-scrollbar {
     display: none;
 }
 body {
+  background: rgba(120,144,156,1);
   margin: 0;
   margin-top: 15px;
   padding: 0;
@@ -30,28 +37,41 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $primary;
-  opacity: 0.9;
+  background: rgba($secondary,0.93);
   color: white;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  height: 50px;
-  font-size: 1.2em;
+  height: 100px;
+  font-size: 1.8em;
   padding: 10px;
   z-index: 999;
-  .header-right {
-    margin-right: 15px;
-  }
   .site-title {
+    margin-left: 95px;
     display: inline-block;
     text-align: right;
+    font-size: 1.5em;
   }
   .menu-icon {
     width: 30%;
     margin-left: 20px;
     display: inline-block;
+  }
+  .header-menu {
+    flex-direction: row;
+    margin-right: 95px;
+    a, p, i {
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      padding: 10px;
+    }
+    .links {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 .menu-icon-back {
@@ -68,9 +88,9 @@ header {
   width: 20%;
   position: fixed;
   right: 15px;
-  text-shadow: 0px 0.5px 1px grey;
+  text-shadow: 0px 0.5px 3px #4c4c4c;
   img {
-    box-shadow: 1px 1px 3px 1px grey;
+    box-shadow: 1px 2px 4px 4px #4c4c4c;
   }
 }
 .about-me-headshot {
@@ -87,7 +107,7 @@ header {
 .project {
   width: 95%;
   .title {
-    color: rgba($primary,0.87);
+    // color: rgba($primary,0.87);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -146,7 +166,7 @@ header {
 .screenshot {
   width: 100%;
   margin: 0 auto;
-  box-shadow: 1px 1px 1px 1px grey;
+  box-shadow: 1px 2px 3px 3px #4c4c4c;
 }
 p {
   cursor: default;
@@ -155,7 +175,7 @@ p {
   cursor: pointer;
 }
 .shadow {
-  text-shadow: 0px 2px 2px grey;
+  text-shadow: 0px 2px 4px #4c4c4c;
 }
 .accent {
   color: $accent;
@@ -172,13 +192,11 @@ p {
   flex-direction: column;
   align-items: center;
 }
-header {
-  .desktop-responsive {
-    flex-direction: row;
-    * {
-      padding: 10px;
-    }
-  }
+.fullscreen {
+  position: absolute;
+  left: 0;
+  height: calc(100vh - 100px);
+  width: 100vw;
 }
 .menu {
   background: rgba($secondary,1);
@@ -254,6 +272,18 @@ header {
   .resume-section:last-child {
     margin-bottom: 50px;
   }
+}
+ck-home {
+  margin: 0;
+  padding: 0;
+  top: 100px;
+  // background: red;
+}
+ck-projects {
+  margin: 0;
+  padding: 0;
+  top: 100vh;
+  // background: blue;
 }
 
 
