@@ -4,13 +4,9 @@ app.config(["$stateProvider","$locationProvider","$urlRouterProvider",function($
   $locationProvider.html5Mode(true);
   $urlRouterProvider.otherwise('/');
   $stateProvider
-    .state('portfolio',{
-      url: '/',
-      templateUrl: 'partials/projects.html'
-    })
-    .state('resume', {
-      url: '/resume',
-      templateUrl: 'partials/resume.html'
+    .state('project',{
+      url: '/project',
+      templateUrl: 'partials/project-details.html'
     })
   $locationProvider.html5Mode(true);
 }]);
