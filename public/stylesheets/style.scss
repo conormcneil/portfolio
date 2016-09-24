@@ -382,6 +382,9 @@ ck-footer {
 @media (max-width: 420px) { // mobile break-point
   .projects {
     .project {
+      * {
+        margin: -15px;
+      }
       max-width: 180px;
     }
   }
@@ -391,6 +394,14 @@ ck-footer {
     h1 {
       font-size: 2.5em;
     }
+  }
+  .projects {
+    .project {
+      max-width: 160px;
+    }
+  }
+  ck-about-me {
+    font-size: 0.7em;
   }
   ck-contact-me {
     .contact {

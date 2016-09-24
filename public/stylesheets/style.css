@@ -277,10 +277,18 @@ ck-footer {
         width: 100%; } }
 @media (max-width: 420px) {
   .projects .project {
-    max-width: 180px; } }
+    max-width: 180px; }
+    .projects .project * {
+      margin: -15px; } }
 @media (max-width: 380px) {
   ck-home h1 {
     font-size: 2.5em; }
+
+  .projects .project {
+    max-width: 160px; }
+
+  ck-about-me {
+    font-size: 0.7em; }
 
   ck-contact-me .contact a, ck-contact-me .contact p, ck-contact-me .contact i, ck-contact-me .contact img {
     margin: 0;
