@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgba(2, 119, 189, 0.87);
+  text-transform: lowercase;
   font-family: "Exo 2", sans-serif; }
 
 a {
