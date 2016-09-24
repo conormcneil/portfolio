@@ -382,9 +382,6 @@ ck-footer {
 @media (max-width: 420px) { // mobile break-point
   .projects {
     .project {
-      * {
-        margin: -15px;
-      }
       max-width: 180px;
     }
   }
