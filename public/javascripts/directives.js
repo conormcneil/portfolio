@@ -5,11 +5,11 @@ app
       controller: 'HeaderController'
     };
   })
-  // .directive('ckNav',function() {
-  //   return {
-  //     templateUrl: 'partials/nav.html'
-  //   }
-  // })
+  .directive('ckNav',function() {
+    return {
+      templateUrl: 'partials/nav.html'
+    }
+  })
   .directive('ckHome',function() {
     return {
       templateUrl: '/partials/home.html'
