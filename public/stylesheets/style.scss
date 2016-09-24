@@ -25,19 +25,9 @@ a {
 .menu-icon-back {
   padding-left: 15px;
 }
-p {
-  cursor: default;
-}
 .pointer {
   cursor: pointer;
 }
-// .accent {
-//   color: $accent;
-//   font-variant: small-caps;
-// }
-// .responsive {
-//   clear: both;
-// }
 .mobile-responsive {
   display: none;
 }
@@ -70,6 +60,10 @@ header {
   font-size: 1.8em;
   padding: 10px;
   z-index: 999;
+  a, p {
+    padding: 0;
+    margin: 0;
+  }
   .site-title {
     margin-left: 95px;
     display: inline-block;
@@ -141,16 +135,24 @@ ck-projects {
   }
 }
 ck-about-me {
+  width: 100%;
   background: $primary;
   color: white;
   display: flex;
   align-items: center;
   flex-flow: column;
-  div {
+  .bio {
+    margin-bottom: 25px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 45%;
+    width: 70vw;
+    .bio-col-1 {
+      width: 48%;
+    }
+    .bio-col-2 {
+      width: 45%;
+    }
     p {
       font-size: 1.3em;
     }
@@ -172,7 +174,7 @@ ck-about-me {
 }
 ck-contact-me {
   background: white;
-  height: 55vh;
+  height: 25vh;
   width: 100vw;
   display: flex;
   flex-flow: column;
@@ -183,11 +185,19 @@ ck-contact-me {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    .left {
-
+    .location {
+      h5 {
+        display: flex;
+        align-items: center;
+      }
     }
     .center {
-
+      .links {
+        i {
+          padding: 15px;
+          font-size: 2em;
+        }
+      }
     }
     .right {
 
@@ -212,141 +222,5 @@ ck-footer {
 // @media (max-width: 925px) and (min-width: 801px) {
 //   .about-me {
 //     font-size: 0.95em;
-//   }
-// }
-//
-// // if less than 800px wide:
-// @media (max-width: 800px) and (min-width: 451px) {
-//   body {
-//     display: flex;
-//     flex-flow: row nowrap;
-//     align-items: center;
-//     text-align: justify;
-//     font-size: 1.4em;
-//   }
-//   .content {
-//     display: flex;
-//     flex-direction: column;
-//     margin-top: 0;
-//   }
-//   .projects {
-//     width: 100%;
-//     margin: 0;
-//     margin-bottom: 20px;
-//   }
-//   .project {
-//     width: 100%;
-//     .title a {
-//       margin-top: -15px;
-//       padding-top: -15px;
-//     }
-//   }
-//   .screenshot {
-//     width: 100%;
-//   }
-//   .about-me {
-//     width: 100%;
-//     height: auto;
-//     position: relative;
-//     margin: 0;
-//     margin-top: 45px;
-//     margin-bottom: 0;
-//     right: 0;
-//     p {
-//       margin: 10px;
-//       padding: 0;
-//     }
-//     .about-me-headshot {
-//       display: none;
-//     }
-//   }
-//   .responsive {
-//     clear: both;
-//     // border-bottom: 3px solid $accent;
-//     width: 100%;
-//     display: inline-block;
-//     position: relative;
-//   }
-//   .mobile-responsive {
-//     display: inline-block;
-//   }
-//   .desktop-responsive {
-//     display: none;
-//   }
-// }
-// // if mobile (less than 450px wide):
-// @media (max-width: 450px) {
-//
-//   body {
-//     display: flex;
-//     flex-flow: column nowrap;
-//     align-items: center;
-//     text-align: justify;
-//     margin: 0;
-//     padding: 0;
-//     font-size: 1.4em;
-//   }
-//   header {
-//     .site-title {
-//       margin: 0;
-//       padding: 0;
-//       width: auto;
-//     }
-//     .menu-icon {
-//       margin: 0;
-//       padding: 0;
-//     }
-//   }
-//   .content {
-//     flex-direction: column;
-//     justify-content: center;
-//     padding: 5px;
-//     margin: 0;
-//     margin-top: 0;
-//   }
-//   .projects {
-//     width: 100%;
-//     margin: 0;
-//   }
-//   .project {
-//     width: 100%;
-//     .title a {
-//       margin-top: -20px;
-//       padding-top: -20px;
-//     }
-//   }
-//   .screenshot {
-//     width: 100%;
-//   }
-//   .about-me {
-//     width: 100%;
-//     height: auto;
-//     position: relative;
-//     right: 0;
-//     margin: 0;
-//     margin-top: 45px;
-//     margin-bottom: 0;
-//     padding: 0;
-//     p {
-//       margin-top: 10px;
-//       margin-bottom: 10px;
-//       padding: 0;
-//     }
-//     .about-me-headshot {
-//       display: none;
-//     }
-//   }
-//   .responsive {
-//     width: 100%;
-//     clear: both;
-//     // border-bottom: 2px solid $accent;
-//     display: inline-block;
-//     position: relative;
-//   }
-//   .mobile-responsive {
-//     display: inline-block;
-//   }
-//   .desktop-responsive {
-//     display: none;
 //   }
 // }

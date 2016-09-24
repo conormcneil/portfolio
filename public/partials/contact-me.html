@@ -1,11 +1,20 @@
-<div class="contact">
+<div class="contact" ng-init="showPhone = false">
   <div class="location">
-    <h5>Location</h5>
+    <h5><img ng-src="./images/icons/location.svg">Location</h5>
+    <p>5423 E 125th Ave</p>
+    <p>Thornton, CO 80241</p>
   </div>
   <div class="center">
-    <h5>contact me here</h5>
+    <h5>contact conor</h5>
+    <div class="links">
+      <a href="https://github.com/conormcneil" target="_blank"><i class="fa fa-github pointer" aria-hidden="true"></i></a>
+      <a href="https://linkedin.com/in/conorkingston" target="_blank"><i class="fa fa-linkedin-square pointer" aria-hidden="true"></i></a>
+      <a href="mailto:conor@conorkingston.com"><i class="fa fa-envelope pointer" aria-hidden="true"></i></a>
+      <i class="fa fa-phone pointer" aria-hidden="true" ng-click="showPhone = !showPhone"></i>
+    </div>
+    <h4 ng-show="showPhone">520.275.1232</h4>
   </div>
-  <div class="blog">
+  <!-- <div class="blog">
     <h5>Blog</h5>
-  </div>
+  </div> -->
 </div>

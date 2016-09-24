@@ -14,9 +14,6 @@ a {
 .menu-icon-back {
   padding-left: 15px; }
 
-p {
-  cursor: default; }
-
 .pointer {
   cursor: pointer; }
 
@@ -50,6 +47,9 @@ header {
   font-size: 1.8em;
   padding: 10px;
   z-index: 999; }
+  header a, header p {
+    padding: 0;
+    margin: 0; }
   header .site-title {
     margin-left: 95px;
     display: inline-block;
@@ -111,17 +111,23 @@ ck-projects {
         width: 100%; }
 
 ck-about-me {
+  width: 100%;
   background: rgba(2, 119, 189, 0.87);
   color: white;
   display: flex;
   align-items: center;
   flex-flow: column; }
-  ck-about-me div {
+  ck-about-me .bio {
+    margin-bottom: 25px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 45%; }
-    ck-about-me div p {
+    width: 70vw; }
+    ck-about-me .bio .bio-col-1 {
+      width: 48%; }
+    ck-about-me .bio .bio-col-2 {
+      width: 45%; }
+    ck-about-me .bio p {
       font-size: 1.3em; }
   ck-about-me button {
     height: 80px;
@@ -138,7 +144,7 @@ ck-about-me {
 
 ck-contact-me {
   background: white;
-  height: 55vh;
+  height: 25vh;
   width: 100vw;
   display: flex;
   flex-flow: column;
@@ -149,6 +155,12 @@ ck-contact-me {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; }
+    ck-contact-me .contact .location h5 {
+      display: flex;
+      align-items: center; }
+    ck-contact-me .contact .center .links i {
+      padding: 15px;
+      font-size: 2em; }
 
 ck-footer {
   margin: 0;
