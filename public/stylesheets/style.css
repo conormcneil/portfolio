@@ -86,8 +86,9 @@ ck-home {
   align-items: center;
   flex-flow: column; }
   ck-home .headshot {
-    height: 250px;
-    border-radius: 175px; }
+    margin-top: -100px;
+    height: 300px;
+    border-radius: 150px; }
 
 ck-projects {
   margin: 0;
@@ -118,7 +119,7 @@ ck-about-me {
   align-items: center;
   flex-flow: column; }
   ck-about-me .bio {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
