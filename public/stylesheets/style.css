@@ -11,19 +11,8 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.menu-icon-back {
-  padding-left: 15px; }
-
 .pointer {
   cursor: pointer; }
-
-.mobile-responsive {
-  display: none; }
-
-.desktop-responsive {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
 .text-shadow {
   text-shadow: 0px 2px 4px #4c4c4c; }
@@ -93,7 +82,6 @@ ck-home {
 ck-projects {
   margin: 0;
   padding: 0;
-  top: 100vh;
   background: white;
   color: rgba(2, 119, 189, 0.87);
   display: flex;
@@ -107,7 +95,8 @@ ck-projects {
     justify-content: space-around;
     align-items: center; }
     ck-projects .projects .project {
-      max-width: 400px; }
+      margin: 15px;
+      width: 400px; }
       ck-projects .projects .project .screenshot {
         width: 100%; }
 
@@ -141,6 +130,7 @@ ck-about-me {
     flex-flow: row nowrap;
     align-items: center; }
   ck-about-me button:active {
+    background: rgba(2, 119, 189, 0.87);
     box-shadow: none; }
 
 ck-contact-me {
@@ -173,5 +163,68 @@ ck-footer {
   justify-content: center;
   align-items: center;
   color: white; }
+
+.mobile-responsive {
+  display: none; }
+
+.desktop-responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+@media (max-width: 1230px) {
+  .projects {
+    min-width: 80vw; }
+    .projects .project {
+      max-width: 350px; } }
+@media (max-width: 1090px) {
+  header {
+    font-size: 1.7em; }
+
+  .projects {
+    min-width: 85vw; } }
+@media (max-width: 900px) {
+  header {
+    font-size: 1.5em; }
+
+  .projects .project {
+    max-width: 275px; } }
+@media (max-width: 820px) {
+  header {
+    font-size: 1.3em; } }
+@media (max-width: 720px) {
+  header {
+    font-size: 1.1em; }
+    header .site-title {
+      margin: 0;
+      padding: 0; }
+    header .header-menu {
+      margin: 0;
+      padding: 0; }
+
+  ck-home h1 {
+    font-size: 3.5em; }
+
+  .projects {
+    min-width: 100vw; }
+    .projects .project {
+      max-width: 300px; } }
+@media (max-width: 660px) {
+  .projects {
+    min-width: 100vw; }
+    .projects .project {
+      max-width: 275px; }
+
+  ck-about-me {
+    font-size: 0.75em; }
+
+  ck-contact-me .contact {
+    width: 80%; } }
+@media (max-width: 610px) {
+  .projects .project {
+    max-width: 250px; } }
+@media (max-width: 560px) {
+  .projects .project {
+    max-width: 215px; } }
 
 /*# sourceMappingURL=style.css.map */
