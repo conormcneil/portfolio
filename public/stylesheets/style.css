@@ -188,10 +188,16 @@ ck-footer {
     font-size: 1.5em; }
 
   .projects .project {
-    max-width: 275px; } }
+    max-width: 275px; }
+
+  ck-about-me .bio {
+    margin-bottom: 25px; } }
 @media (max-width: 820px) {
   header {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+
+  ck-about-me {
+    font-size: .9em; } }
 @media (max-width: 720px) {
   header {
     font-size: 1.1em; }
@@ -203,12 +209,18 @@ ck-footer {
       padding: 0; }
 
   ck-home h1 {
-    font-size: 3.5em; }
+    font-size: 3.8em; }
 
   .projects {
     min-width: 100vw; }
     .projects .project {
-      max-width: 300px; } }
+      max-width: 300px; }
+
+  ck-about-me .bio {
+    width: 85%; }
+
+  ck-contact-me .contact {
+    width: 85vw; } }
 @media (max-width: 660px) {
   .projects {
     min-width: 100vw; }
@@ -228,10 +240,36 @@ ck-footer {
   .projects .project {
     max-width: 250px; } }
 @media (max-width: 560px) {
+  ck-home h1 {
+    font-size: 3em; }
+
   .projects .project {
-    max-width: 215px; } }
-@media (max-width: 460px) {
+    max-width: 215px; }
+
   ck-about-me .bio {
-    margin-bottom: 15px; } }
+    margin-bottom: 5px; }
+
+  ck-contact-me .contact {
+    width: 95vw; } }
+@media (max-width: 460px) {
+  .desktop-responsive {
+    display: none; }
+
+  .mobile-responsive {
+    display: flex; }
+
+  header .mobile-responsive, header .site-title {
+    font-size: 1.7em; }
+
+  ck-home h1 {
+    font-size: 2.8em; }
+
+  ck-about-me {
+    font-size: 0.8em; }
+    ck-about-me .bio {
+      align-items: center;
+      flex-flow: column; }
+      ck-about-me .bio .bio-col-1, ck-about-me .bio .bio-col-2 {
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
