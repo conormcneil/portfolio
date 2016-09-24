@@ -363,8 +363,13 @@ ck-footer {
     }
   }
   ck-about-me {
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
     font-size: 0.8em;
     .bio {
+      margin-top: 0;
       align-items: center;
       flex-flow: column;
       .bio-col-1, .bio-col-2 {
@@ -402,7 +407,11 @@ ck-footer {
 // }
 
 @media (max-width: 420px) { // mobile break-point
-
+  .projects {
+    .project {
+      max-width: 180px;
+    }
+  }
 }
 @media (max-width: 380px) {
   ck-home {

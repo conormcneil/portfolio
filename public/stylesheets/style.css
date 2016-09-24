@@ -266,11 +266,18 @@ ck-footer {
 
   ck-about-me {
     font-size: 0.8em; }
+    ck-about-me h3 {
+      margin: 0;
+      padding: 0; }
     ck-about-me .bio {
+      margin-top: 0;
       align-items: center;
       flex-flow: column; }
       ck-about-me .bio .bio-col-1, ck-about-me .bio .bio-col-2 {
         width: 100%; } }
+@media (max-width: 420px) {
+  .projects .project {
+    max-width: 180px; } }
 @media (max-width: 380px) {
   ck-home h1 {
     font-size: 2.5em; }
