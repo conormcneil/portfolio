@@ -214,9 +214,13 @@ ck-footer {
     min-width: 100vw; }
     .projects .project {
       max-width: 275px; }
+    .projects .project:first-child {
+      margin-top: 0; }
 
   ck-about-me {
-    font-size: 0.75em; }
+    font-size: 0.85em; }
+    ck-about-me .bio {
+      width: 85vw; }
 
   ck-contact-me .contact {
     width: 80%; } }
@@ -226,5 +230,8 @@ ck-footer {
 @media (max-width: 560px) {
   .projects .project {
     max-width: 215px; } }
+@media (max-width: 460px) {
+  ck-about-me .bio {
+    margin-bottom: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

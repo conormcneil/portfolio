@@ -278,9 +278,15 @@ ck-footer {
     .project {
       max-width: 275px;
     }
+    .project:first-child {
+      margin-top: 0;
+    }
   }
   ck-about-me {
-    font-size: 0.75em;
+    .bio {
+      width: 85vw;
+    }
+    font-size: 0.85em;
   }
   ck-contact-me {
     .contact {
@@ -299,6 +305,18 @@ ck-footer {
   .projects {
     .project {
       max-width: 215px;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .projects {
+    .project {
+
+    }
+  }
+  ck-about-me {
+    .bio {
+      margin-bottom: 15px;
     }
   }
 }
