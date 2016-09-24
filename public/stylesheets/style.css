@@ -271,5 +271,12 @@ ck-footer {
       flex-flow: column; }
       ck-about-me .bio .bio-col-1, ck-about-me .bio .bio-col-2 {
         width: 100%; } }
+@media (max-width: 380px) {
+  ck-home h1 {
+    font-size: 2.5em; }
+
+  ck-contact-me .contact a, ck-contact-me .contact p, ck-contact-me .contact i, ck-contact-me .contact img {
+    margin: 0;
+    padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

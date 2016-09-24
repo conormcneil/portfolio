@@ -404,6 +404,21 @@ ck-footer {
 @media (max-width: 420px) { // mobile break-point
 
 }
+@media (max-width: 380px) {
+  ck-home {
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+  ck-contact-me {
+    .contact {
+      a, p, i, img {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
 @media (max-width: 320px) { // smallest mobile break-point
 
 }
