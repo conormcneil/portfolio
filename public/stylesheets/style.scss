@@ -205,6 +205,9 @@ ck-contact-me {
           padding: 15px;
           font-size: 2em;
         }
+        i:hover {
+          box-shadow: 0px 0px 1px 3px $secondary;
+        }
       }
     }
   }
