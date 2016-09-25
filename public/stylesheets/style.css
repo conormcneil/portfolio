@@ -49,8 +49,7 @@ header {
     text-align: right;
     font-size: 1.5em; }
   header .menu-icon {
-    width: 30%;
-    margin-left: 20px;
+    margin-right: 20px;
     display: inline-block; }
   header .header-menu {
     flex-direction: row;
@@ -120,6 +119,54 @@ ck-projects {
       width: 400px; }
       ck-projects .projects .project .screenshot {
         width: 100%; }
+
+ck-project-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  background: rgba(255, 255, 255, 0.93);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  ck-project-details .project-details {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    ck-project-details .project-details .project-screenshot {
+      display: flex;
+      justify-content: center;
+      width: 70%; }
+      ck-project-details .project-details .project-screenshot img {
+        display: block;
+        width: inherit; }
+    ck-project-details .project-details .details {
+      text-align: center;
+      color: rgba(2, 119, 189, 0.87);
+      width: 80%;
+      padding: 5px; }
+    ck-project-details .project-details .info {
+      color: rgba(2, 119, 189, 0.87);
+      width: 80%;
+      padding: 5px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around; }
+      ck-project-details .project-details .info .tech {
+        text-align: left; }
+        ck-project-details .project-details .info .tech p {
+          padding: 0;
+          margin: 0; }
+      ck-project-details .project-details .info .github {
+        text-align: left; }
+  ck-project-details .close {
+    position: fixed;
+    top: 50px;
+    right: 50px; }
 
 ck-about-me {
   width: 100%;
@@ -287,6 +334,11 @@ ck-footer {
   ck-home h1 {
     font-size: 2.8em; }
 
+  ck-project-details {
+    overflow-y: scroll; }
+    ck-project-details .project-details .details {
+      width: 90%; }
+
   ck-about-me {
     font-size: 0.8em; }
     ck-about-me h3 {
@@ -300,7 +352,18 @@ ck-footer {
         width: 100%; } }
 @media (max-width: 420px) {
   .projects .project {
-    max-width: 180px; } }
+    max-width: 180px; }
+
+  ck-project-details {
+    background: white; }
+    ck-project-details .project-details {
+      width: 100%;
+      height: 80%; }
+      ck-project-details .project-details .details {
+        width: 100%; }
+    ck-project-details .close {
+      top: 10px;
+      right: 10px; } }
 @media (max-width: 380px) {
   ck-home h1 {
     font-size: 2.5em; }

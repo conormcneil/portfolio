@@ -21,6 +21,12 @@ app
       controller: 'ProjectController'
     }
   })
+  .directive('ckProjectDetails',function() {
+    return {
+      templateUrl: '/partials/project-details.html',
+      controller: 'ProjectController'
+    }
+  })
   .directive('ckAboutMe',function() {
     return {
       templateUrl: '/partials/about-me.html'
