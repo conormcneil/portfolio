@@ -10,7 +10,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300' rel='stylesheet' type='text/css'>
   <!-- Angular CDNs -->
-  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js' charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.14/angular-ui-router.js" charset="utf-8"></script>
   <link rel="stylesheet" href="./stylesheets/style.css">
   <script src='./javascripts/app.js'></script>
@@ -24,7 +25,7 @@
 <body>
 
   <ck-header></ck-header>
-  <ck-nav class="z-depth-3"></ck-nav>
+  <ck-nav class="z-depth-3" ng-show="view.showMenu" ng-animate=" 'animate' "></ck-nav>
   <ck-home class="fullscreen" id="home"></ck-home>
   <ck-projects class="fullscreen" id="projects"></ck-projects>
   <ck-about-me class="fullscreen" id="about-me"></ck-about-me>

@@ -1,5 +1,4 @@
-<div class='menu' ng-show="view.showMenu">
-  <!-- <i class="menu-icon-back pointer fa fa-chevron-left" ng-click="toggle('showMenu')" aria-hidden="true"></i> -->
+<div class='menu'>
   <a href="#projects">
     <p class="pointer" ng-click="toggle('showMenu');">projects</p>
   </a>
@@ -9,5 +8,7 @@
   <a href="#contact-me">
     <p class="pointer" ng-click="toggle('showMenu');">contact</p>
   </a>
+
+  <!-- curtain closes menu on body select -->
   <div class="curtain" ng-click="toggle('showMenu');"></div>
 </div>

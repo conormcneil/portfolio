@@ -504,3 +504,20 @@ ck-footer {
 @media (max-width: 320px) { // smallest mobile break-point
 
 }
+
+ck-nav.ng-hide-remove {
+	-webkit-transition: 0.5s linear all; /* Chrome */
+	transition: 0.5s linear all;
+	opacity: 0;
+}
+ck-nav.ng-hide-remove.ng-hide-remove-active {
+	opacity: 1;
+}
+ck-nav.ng-hide-add {
+	-webkit-transition: 0.5s linear all; /* Chrome */
+	transition: 0.5s linear all;
+	opacity: 1;
+}
+ck-nav.ng-hide-add.ng-hide-add-active {
+	opacity: 0;
+}
