@@ -18,7 +18,7 @@ app.service('ProjectService', function() {
           github: 'https://github.com/conormcneil/thesunandthespoon',
           technologies: ['Angular.js','Node.js','PostgreSQL','Sass','ui-Router'],
           screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1475787515/Screen_Shot_2016-10-06_at_2.57.33_PM_su3yip.png',
-          description: 'The Sun and the Spoon is a vegan food blog run by a professional food blogger and photographer in Arizona. This project was designed as a replacement for the current site and includes many upgrades. The site boasts a simple, elegant design that is repsonsive on any device. As the photographs provide all the color necessary, the palette for the project is simple black and white. This layout allows the content to stand out above all else while still providing users with intuitive control over their experience.'
+          description: 'The Sun and the Spoon is redesign for a vegan food blog run by a professional food journalist and photographer. The app boasts a simple, elegant design that is responsive on any device. As the vibrant photographs provide all the color necessary, the palette for the project is simply black and white. This layout allows the content to stand out above all else while still providing users with intuitive control over their experience.'
         },
         {
           id: 3,
