@@ -62,7 +62,7 @@ app.service('ProjectService', function() {
               github: 'https://github.com/westaa'
             }
           ],
-          technologies: ['Express.js','Node.js','HTML5','CSS3','SASS'],
+          technologies: ['Express.js','Node.js','HTML5','CSS3','SASS','OAuth'],
           screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1467838950/Screen_Shot_2016-07-06_at_2.59.03_PM_w6z5zj.png',
           description: 'Finding Fido is a project that attempts to help reunite users with lost pets. Losing a pet can be very stressful and putting up posters around your neighborhood can often feel futile and cumbersome. With Finding Fido, users can post pictures and descriptions of lost pets so that others nearby can look out for them. It also allows users to post when they have found a wandering pet. In this case, users can tell other users when they have found an animal that may belong to someone. The goal is to reduce the number of pets sent to animal shelters where they are eventually and tragically euthanized.'
         }
