@@ -125,9 +125,8 @@ a {
     align-items: center;
     flex-flow: column; }
     ck-home .headshot {
-      margin-top: -100px;
-      height: 300px;
-      border-radius: 150px; }
+      height: 280px;
+      border-radius: 140px; }
 
   ck-projects {
     width: 100vw;
