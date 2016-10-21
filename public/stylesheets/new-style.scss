@@ -289,17 +289,15 @@ a {
       flex-flow: row wrap;
       justify-content: center;
       .width-wrap {
-        a, p, i, img {
-          margin: 0;
-          padding: 0;
-        }
         .location {
+          padding: 10px;
           h5 {
             display: flex;
             align-items: center;
           }
         }
         .center {
+          padding: 10px;
           .links {
             i {
               border-radius: 3px;
