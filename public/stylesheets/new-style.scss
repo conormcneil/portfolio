@@ -55,8 +55,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100%;
-  // background: red;
+  // height: 100%;
 }
 
 @media (min-width: 320px) {
@@ -249,7 +248,7 @@ a {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: justify;
+      // text-align: justify;
       .width-wrap {
         padding: 10px;
         .bio-col-1 {
@@ -325,8 +324,19 @@ a {
   }
 }
 @media (min-width: 375px) {
-  body {
-
+  .width-wrap {
+    width: 95%;
+  }
+  header {
+    .width-wrap {
+      .site-title {
+        font-size: 2.5em;
+        // background: red;
+      }
+    }
+  }
+  ck-about-me {
+    font-size: 1em;
   }
 }
 @media (min-width: 414px) {
