@@ -24,6 +24,13 @@ a {
 .fullscreen {
   height: calc(100vh - 100px); }
 
+.width-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -38,35 +45,30 @@ header {
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 1.8em;
   padding: 10px;
   z-index: 100; }
-  header .width-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; }
-    header .width-wrap a, header .width-wrap p {
-      padding: 0;
-      margin: 0; }
-    header .width-wrap .site-title {
-      display: inline-block;
-      text-align: right;
-      font-size: 1.5em; }
-    header .width-wrap .menu-icon {
-      display: inline-block; }
-    header .width-wrap .header-menu {
-      flex-direction: row; }
-      header .width-wrap .header-menu a, header .width-wrap .header-menu p, header .width-wrap .header-menu i {
-        margin: 0;
-        padding: 0; }
-      header .width-wrap .header-menu p {
-        padding: 10px; }
-      header .width-wrap .header-menu .links {
-        margin: 0;
-        padding: 0; }
+  header .width-wrap a, header .width-wrap p {
+    padding: 0;
+    margin: 0; }
+  header .width-wrap .site-title {
+    display: inline-block;
+    text-align: right;
+    font-size: 1.5em; }
+  header .width-wrap .menu-icon {
+    display: inline-block; }
+  header .width-wrap .header-menu {
+    flex-direction: row; }
+    header .width-wrap .header-menu a, header .width-wrap .header-menu p, header .width-wrap .header-menu i {
+      margin: 0;
+      padding: 0; }
+    header .width-wrap .header-menu p {
+      padding: 10px; }
+    header .width-wrap .header-menu .links {
+      margin: 0;
+      padding: 0; }
 
 ck-nav {
   position: fixed;
@@ -105,25 +107,27 @@ ck-home {
     border-radius: 150px; }
 
 ck-projects {
-  margin: 0;
-  padding: 0;
-  background: white;
-  color: rgba(2, 119, 189, 0.87);
+  width: 100vw;
+  text-align: center;
   display: flex;
-  align-items: center;
   flex-direction: column; }
   ck-projects .projects {
-    width: 70vw;
-    height: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center; }
-    ck-projects .projects .project {
-      margin: 15px;
-      width: 400px; }
-      ck-projects .projects .project .screenshot {
-        width: 100%; }
+    justify-content: center; }
+    ck-projects .projects .width-wrap {
+      margin: 0;
+      padding: 0;
+      color: rgba(2, 119, 189, 0.87);
+      display: flex;
+      align-items: center;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center; }
+      ck-projects .projects .width-wrap .project {
+        margin: 15px;
+        width: 400px; }
+        ck-projects .projects .width-wrap .project .screenshot {
+          width: 100%; }
 
 ck-project-details {
   position: fixed;
@@ -182,52 +186,54 @@ ck-about-me {
   flex-flow: column; }
   ck-about-me .bio {
     margin-bottom: 50px;
+    height: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 70vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: justify; }
-    ck-about-me .bio .bio-col-1 {
-      width: 48%; }
-    ck-about-me .bio .bio-col-2 {
-      width: 45%; }
-    ck-about-me .bio p {
-      font-size: 1.3em; }
-  ck-about-me button {
-    height: 80px;
-    padding: 15px;
-    background: none;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 1.5em;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center; }
-  ck-about-me button:active {
-    background: rgba(2, 119, 189, 0.87);
-    box-shadow: none; }
+    ck-about-me .bio .width-wrap {
+      padding: 10px; }
+      ck-about-me .bio .width-wrap .bio-col-1 {
+        width: 48%; }
+      ck-about-me .bio .width-wrap .bio-col-2 {
+        width: 45%; }
+      ck-about-me .bio .width-wrap p {
+        font-size: 1.3em; }
+    ck-about-me .bio button {
+      height: 80px;
+      padding: 15px;
+      background: none;
+      border: 2px solid white;
+      border-radius: 5px;
+      font-size: 1.5em;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center; }
+    ck-about-me .bio button:active {
+      background: rgba(2, 119, 189, 0.87);
+      box-shadow: none; }
 
 ck-contact-me {
   background: white;
   height: 25vh;
   width: 100vw;
   display: flex;
-  flex-flow: column;
   justify-content: center;
   align-items: center; }
   ck-contact-me .contact {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; }
-    ck-contact-me .contact .location h5 {
+    justify-content: center; }
+    ck-contact-me .contact .width-wrap .location h5 {
       display: flex;
       align-items: center; }
-    ck-contact-me .contact .center .links i {
+    ck-contact-me .contact .width-wrap .center .links i {
       border-radius: 3px;
       padding: 15px;
       font-size: 2em; }
-    ck-contact-me .contact .center .links i:hover {
+    ck-contact-me .contact .width-wrap .center .links i:hover {
       box-shadow: 0px 0px 1px 3px #78909c; }
 
 ck-footer {

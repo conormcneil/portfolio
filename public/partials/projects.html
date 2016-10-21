@@ -1,8 +1,12 @@
 <h3 class="text-shadow">Recent Projects</h3>
 <div class="projects">
-  <div class="project" ng-repeat="project in view.projects track by $index">
-    <img ng-src="{{ project.screenshot }}" alt="{{ project.title }}" title="{{ project.title }}" class="screenshot pointer z-depth-2" ng-click="toggle('projectDetails');view.setActiveProject(project.id)">
+  <div class="width-wrap">
+    <div class="project" ng-repeat="project in view.projects track by $index">
+      <img ng-src="{{ project.screenshot }}" alt="{{ project.title }}" title="{{ project.title }}" class="screenshot pointer z-depth-2" ng-click="toggle('projectDetails');view.setActiveProject(project.id)">
+    </div>
   </div>
 </div>
-<!-- curtain -->
+
+<!-- curtain: superimposes itself on top of all other elements
+ to display info about a specific project -->
 <ck-project-details ng-show="view.projectDetails"></ck-project-details>

@@ -31,6 +31,15 @@ a {
 .fullscreen {
   height: calc(100vh - 100px);
 }
+.width-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  // background: red;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -45,16 +54,12 @@ header {
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 1.8em;
   padding: 10px;
   z-index: 100;
   .width-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     a, p {
       padding: 0;
       margin: 0;
@@ -126,25 +131,28 @@ ck-home {
   }
 }
 ck-projects {
-  margin: 0;
-  padding: 0;
-  background: white;
-  color: $primary;
+  width: 100vw;
+  text-align: center;
   display: flex;
-  align-items: center;
   flex-direction: column;
   .projects {
-    width: 70vw;
-    height: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    .project {
-      margin: 15px;
-      width: 400px;
-      .screenshot {
-        width: 100%;
+    justify-content: center;
+    .width-wrap {
+      margin: 0;
+      padding: 0;
+      color: $primary;
+      display: flex;
+      align-items: center;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+      .project {
+        margin: 15px;
+        width: 400px;
+        .screenshot {
+          width: 100%;
+        }
       }
     }
   }
@@ -217,35 +225,39 @@ ck-about-me {
   flex-flow: column;
   .bio {
     margin-bottom: 50px;
+    height: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 70vw;
-    text-align: justify;
-    .bio-col-1 {
-      width: 48%;
-    }
-    .bio-col-2 {
-      width: 45%;
-    }
-    p {
-      font-size: 1.3em;
-    }
-  }
-  button {
-    height: 80px;
-    padding: 15px;
-    background: none;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 1.5em;
-    display: flex;
-    flex-flow: row nowrap;
+    flex-direction: column;
     align-items: center;
-  }
-  button:active {
-    background: $primary;
-    box-shadow: none;
+    justify-content: center;
+    text-align: justify;
+    .width-wrap {
+      padding: 10px;
+      .bio-col-1 {
+        width: 48%;
+      }
+      .bio-col-2 {
+        width: 45%;
+      }
+      p {
+        font-size: 1.3em;
+      }
+    }
+    button {
+      height: 80px;
+      padding: 15px;
+      background: none;
+      border: 2px solid white;
+      border-radius: 5px;
+      font-size: 1.5em;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+    button:active {
+      background: $primary;
+      box-shadow: none;
+    }
   }
 }
 ck-contact-me {
@@ -253,29 +265,30 @@ ck-contact-me {
   height: 25vh;
   width: 100vw;
   display: flex;
-  flex-flow: column;
   justify-content: center;
   align-items: center;
   .contact {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    .location {
-      h5 {
-        display: flex;
-        align-items: center;
-      }
-    }
-    .center {
-      .links {
-        i {
-          border-radius: 3px;
-          padding: 15px;
-          font-size: 2em;
+    justify-content: center;
+    .width-wrap {
+      .location {
+        h5 {
+          display: flex;
+          align-items: center;
         }
-        i:hover {
-          box-shadow: 0px 0px 1px 3px $secondary;
+      }
+      .center {
+        .links {
+          i {
+            border-radius: 3px;
+            padding: 15px;
+            font-size: 2em;
+          }
+          i:hover {
+            box-shadow: 0px 0px 1px 3px $secondary;
+          }
         }
       }
     }
@@ -292,6 +305,8 @@ ck-footer {
   align-items: center;
   color: white;
 }
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 .mobile-responsive {
   display: none;
