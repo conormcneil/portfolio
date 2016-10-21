@@ -1,6 +1,9 @@
 ::-webkit-scrollbar {
   display: none;
 }
+.pointer {
+  cursor: pointer;
+}
 // Variables
 $font1: 'Exo 2', sans-serif;
 $primary: rgba(2,119,189,0.87);
@@ -212,6 +215,7 @@ ck-about-me {
     flex-flow: row wrap;
     justify-content: space-between;
     width: 70vw;
+    text-align: justify;
     .bio-col-1 {
       width: 48%;
     }

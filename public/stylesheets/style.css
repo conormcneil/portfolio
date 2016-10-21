@@ -1,6 +1,9 @@
 ::-webkit-scrollbar {
   display: none; }
 
+.pointer {
+  cursor: pointer; }
+
 body {
   margin: 0;
   padding: 0;
@@ -180,7 +183,8 @@ ck-about-me {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 70vw; }
+    width: 70vw;
+    text-align: justify; }
     ck-about-me .bio .bio-col-1 {
       width: 48%; }
     ck-about-me .bio .bio-col-2 {

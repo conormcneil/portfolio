@@ -16,7 +16,7 @@ app.service('ProjectService', function() {
           title: 'The Sun and the Spoon',
           url: 'https://thesunandthespoon.herokuapp.com/',
           github: 'https://github.com/conormcneil/thesunandthespoon',
-          technologies: ['Angular.js','Node.js','PostgreSQL','Sass','ui-Router'],
+          technologies: ['Angular.js','Node.js','Express.js','PostgreSQL','Sass','ui-Router'],
           screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1475787515/Screen_Shot_2016-10-06_at_2.57.33_PM_su3yip.png',
           description: 'The Sun and the Spoon is redesign for a vegan food blog run by a professional food journalist and photographer. The app boasts a simple, elegant design that is responsive on any device. As the vibrant photographs provide all the color necessary, the palette for the project is simply black and white. This layout allows the content to stand out above all else while still providing users with intuitive control over their experience.'
         },
