@@ -207,7 +207,8 @@ a {
     color: white;
     display: flex;
     align-items: center;
-    flex-flow: column; }
+    flex-flow: column;
+    font-size: 0.8em; }
     ck-about-me .bio {
       margin-bottom: 50px;
       height: 100%;
@@ -222,8 +223,6 @@ a {
           width: 48%; }
         ck-about-me .bio .width-wrap .bio-col-2 {
           width: 45%; }
-        ck-about-me .bio .width-wrap p {
-          font-size: 1.3em; }
       ck-about-me .bio button {
         height: 80px;
         padding: 15px;
@@ -250,6 +249,9 @@ a {
       display: flex;
       flex-flow: row wrap;
       justify-content: center; }
+      ck-contact-me .contact .width-wrap a, ck-contact-me .contact .width-wrap p, ck-contact-me .contact .width-wrap i, ck-contact-me .contact .width-wrap img {
+        margin: 0;
+        padding: 0; }
       ck-contact-me .contact .width-wrap .location h5 {
         display: flex;
         align-items: center; }
@@ -269,14 +271,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; }
-
-  ck-about-me {
-    font-size: 0.7em; }
-
-  ck-contact-me .contact a, ck-contact-me .contact p, ck-contact-me .contact i, ck-contact-me .contact img {
-    margin: 0;
-    padding: 0; } }
+    color: white; } }
 @media (min-width: 1024px) {
   .mobile-responsive {
     display: none; }
