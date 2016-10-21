@@ -55,7 +55,6 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  // height: 100%;
 }
 
 @media (min-width: 320px) {
@@ -248,7 +247,6 @@ a {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      // text-align: justify;
       .width-wrap {
         padding: 10px;
         .bio-col-1 {
@@ -331,7 +329,6 @@ a {
     .width-wrap {
       .site-title {
         font-size: 2.5em;
-        // background: red;
       }
     }
   }
@@ -340,16 +337,22 @@ a {
   }
 }
 @media (min-width: 414px) {
-  body {
-
+  .width-wrap {
+    width: 90%;
+  }
+  ck-about-me {
+    font-size: 1.1em;
   }
 }
 @media (min-width: 768px) {
-  body {
+  .width-wrap {
 
   }
 }
 @media (min-width: 1024px) {
+  .width-wrap {
+
+  }
   .mobile-responsive {
     display: none;
   }

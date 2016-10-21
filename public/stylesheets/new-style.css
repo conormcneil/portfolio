@@ -280,6 +280,12 @@ a {
 
   ck-about-me {
     font-size: 1em; } }
+@media (min-width: 414px) {
+  .width-wrap {
+    width: 90%; }
+
+  ck-about-me {
+    font-size: 1.1em; } }
 @media (min-width: 1024px) {
   .mobile-responsive {
     display: none; }
