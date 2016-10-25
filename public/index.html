@@ -19,6 +19,7 @@
   <script src='./javascripts/controllers.js'></script>
   <script src='./javascripts/directives.js'></script>
   <script src='./javascripts/services.js'></script>
+  <script src='./javascripts/scroll.js'></script>
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./stylesheets/new-style.css">
   <base href="/">
@@ -28,10 +29,10 @@
 
   <ck-header></ck-header>
   <ck-nav class="z-depth-3" ng-show="view.showMenu" ng-animate=" 'animate' "></ck-nav>
-  <ck-home class="fullscreen" id="home"></ck-home>
-  <ck-projects class="x_fullscreen" id="projects"></ck-projects>
-  <ck-about-me class="x_fullscreen" id="about-me"></ck-about-me>
-  <ck-contact-me id="contact-me"></ck-contact-me>
+  <ck-home class="fullscreen scroll-container" id="home"></ck-home>
+  <ck-projects class="x_fullscreen scroll-container" id="projects"></ck-projects>
+  <ck-about-me class="x_fullscreen scroll-container" id="about-me"></ck-about-me>
+  <ck-contact-me class="scroll-container" id="contact-me"></ck-contact-me>
   <ck-footer></ck-footer>
 
 

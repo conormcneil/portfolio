@@ -51,6 +51,9 @@ a {
   align-items: center;
   width: 100%; }
 
+.active {
+  background: red; }
+
 h1 {
   font-size: 4em; }
 
