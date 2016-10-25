@@ -28,7 +28,7 @@ ck-nav.ng-hide-add.ng-hide-add-active, ck-project-details.ng-hide-add-active {
 body {
   margin: 0;
   padding: 0;
-  color: rgba(2, 119, 189, 0.87);
+  color: rgba(0, 145, 234, 0.87);
   text-transform: lowercase;
   font-family: "Lato", sans-serif; }
 
@@ -43,7 +43,7 @@ a {
   text-shadow: 0px 0px 1px white; }
 
 .text-shadow-alt {
-  text-shadow: 0px 0px 1px rgba(2, 119, 189, 0.87); }
+  text-shadow: 0px 0px 1px rgba(0, 145, 234, 0.87); }
 
 .fullscreen {
   height: calc(100vh - 100px); }
@@ -136,7 +136,7 @@ h5 {
     margin: 0;
     padding: 0;
     margin-top: 100px;
-    background: rgba(2, 119, 189, 0.87);
+    background: rgba(0, 145, 234, 0.87);
     color: white;
     display: flex;
     justify-content: center;
@@ -158,7 +158,7 @@ h5 {
       ck-projects .projects .width-wrap {
         margin: 0;
         padding: 0;
-        color: rgba(2, 119, 189, 0.87);
+        color: rgba(0, 145, 234, 0.87);
         display: flex;
         align-items: center;
         flex-flow: row wrap;
@@ -196,11 +196,11 @@ h5 {
           width: inherit; }
       ck-project-details .project-details .details {
         text-align: center;
-        color: rgba(2, 119, 189, 0.87);
+        color: rgba(0, 145, 234, 0.87);
         width: 80%;
         padding: 5px; }
       ck-project-details .project-details .info {
-        color: rgba(2, 119, 189, 0.87);
+        color: rgba(0, 145, 234, 0.87);
         width: 80%;
         padding: 5px;
         display: flex;
@@ -221,7 +221,7 @@ h5 {
   ck-about-me {
     width: 100%;
     height: 100vh;
-    background: rgba(2, 119, 189, 0.87);
+    background: rgba(0, 145, 234, 0.87);
     color: white;
     display: flex;
     align-items: center;
@@ -252,7 +252,7 @@ h5 {
           flex-flow: row nowrap;
           align-items: center; }
       ck-about-me .bio button:active {
-        background: rgba(2, 119, 189, 0.87);
+        background: rgba(0, 145, 234, 0.87);
         box-shadow: none; }
 
   ck-contact-me {
