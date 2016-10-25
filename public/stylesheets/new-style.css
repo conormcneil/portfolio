@@ -263,7 +263,8 @@ h5 {
       flex-flow: row wrap;
       justify-content: center; }
       ck-contact-me .contact .width-wrap .location {
-        padding: 10px; }
+        padding: 10px;
+        text-align: center; }
         ck-contact-me .contact .width-wrap .location h5 {
           display: flex;
           align-items: center; }
