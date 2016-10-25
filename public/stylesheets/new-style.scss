@@ -60,6 +60,10 @@ a {
   font-size: 2.1em;
   text-shadow: 3px 3px 13px black;
 }
+.active-nav {
+  font-size: 1.3em;
+  text-shadow: 3px 3px 13px black;
+}
 h1 {
   font-size: 4em;
 }
@@ -83,7 +87,7 @@ h5 {
     align-items: center;
   }
   header {
-    background: rgba($secondary,0.93);
+    background: rgba($secondary,0.98);
     color: white;
     position: fixed;
     left: 0;
