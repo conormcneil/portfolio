@@ -4,21 +4,21 @@ app.service('ProjectService', function() {
       [
         {
           id: 1,
-          title: 'Farmer\'s Table',
-          url: 'https://farmerstable.herokuapp.com/',
-          github: 'https://github.com/conormcneil/farmerstable',
-          technologies: ['Angular.js','Node.js','Express.js','PostgreSQL','Sass','TDD (Intern/Jasmine)','Google Maps API','Angular Google Maps'],
-          screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1473439545/farmers-table_owjmhx.png',
-          description: 'Farmer\'s Table is designed to connect local farmer\'s with their communities by digitizing CSAs and providing a space for customers to communicate and connect directly with their local farmers. In this way, users can engage in their local food systems, support local economies, and receive access to healthy, fresh food, often at a lower price than what one may find at conventional grocery stores. The goal is that users will become more aware of where their food comes from and how much purchasing power consumers wield.'
-        },
-        {
-          id: 2,
           title: 'The Sun and the Spoon',
           url: 'https://thesunandthespoon.herokuapp.com/',
           github: 'https://github.com/conormcneil/thesunandthespoon',
           technologies: ['Angular.js','Node.js','Express.js','PostgreSQL','Sass','ui-Router'],
           screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1475787515/Screen_Shot_2016-10-06_at_2.57.33_PM_su3yip.png',
           description: 'The Sun and the Spoon is redesign for a vegan food blog run by a professional food journalist and photographer. The app boasts a simple, elegant design that is responsive on any device. As the vibrant photographs provide all the color necessary, the palette for the project is simply black and white. This layout allows the content to stand out above all else while still providing users with intuitive control over their experience.'
+        },
+        {
+          id: 2,
+          title: 'Farmer\'s Table',
+          url: 'https://farmerstable.herokuapp.com/',
+          github: 'https://github.com/conormcneil/farmerstable',
+          technologies: ['Angular.js','Node.js','Express.js','PostgreSQL','Sass','TDD (Intern/Jasmine)','Google Maps API','Angular Google Maps'],
+          screenshot: 'https://res.cloudinary.com/dmuipy77o/image/upload/v1473439545/farmers-table_owjmhx.png',
+          description: 'Farmer\'s Table is designed to connect local farmer\'s with their communities by digitizing CSAs and providing a space for customers to communicate and connect directly with their local farmers. In this way, users can engage in their local food systems, support local economies, and receive access to healthy, fresh food, often at a lower price than what one may find at conventional grocery stores. The goal is that users will become more aware of where their food comes from and how much purchasing power consumers wield.'
         },
         {
           id: 3,
