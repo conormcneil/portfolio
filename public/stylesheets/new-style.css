@@ -226,7 +226,6 @@ h5 {
     flex-flow: column;
     font-size: 0.8em; }
     ck-about-me .bio {
-      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
