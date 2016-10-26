@@ -95,21 +95,22 @@ h5 {
     justify-content: center;
     align-items: center;
     font-size: 0.8em;
-    padding: 10px;
     z-index: 100; }
-    header .width-wrap a, header .width-wrap p {
-      padding: 0;
-      margin: 0; }
-    header .width-wrap .site-title {
-      display: inline-block;
-      text-align: right; }
-    header .width-wrap .menu-icon {
-      display: inline-block;
-      height: 4em; }
-    header .width-wrap .header-menu {
-      flex-direction: row; }
-      header .width-wrap .header-menu h5 {
-        padding: 10px; }
+    header .width-wrap {
+      padding: 10px; }
+      header .width-wrap a, header .width-wrap p {
+        padding: 0;
+        margin: 0; }
+      header .width-wrap .site-title {
+        display: inline-block;
+        text-align: right; }
+      header .width-wrap .menu-icon {
+        display: inline-block;
+        height: 4em; }
+      header .width-wrap .header-menu {
+        flex-direction: row; }
+        header .width-wrap .header-menu h5 {
+          padding: 10px; }
 
   ck-nav {
     position: fixed;
