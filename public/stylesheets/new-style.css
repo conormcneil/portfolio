@@ -110,7 +110,8 @@ h5 {
       header .width-wrap .header-menu {
         flex-direction: row; }
         header .width-wrap .header-menu h5 {
-          padding: 10px; }
+          padding: 10px;
+          padding-left: 25px; }
 
   ck-nav {
     position: fixed;
@@ -120,10 +121,16 @@ h5 {
     z-index: 99;
     background: rgba(26, 35, 126, 0.93);
     color: white;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center; }
     ck-nav p {
-      margin: 5px;
-      padding-left: 35px; }
+      margin: 0;
+      padding-right: 15px; }
+    ck-nav .width-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
     ck-nav .curtain {
       position: fixed;
       top: 210px;
