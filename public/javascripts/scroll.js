@@ -15,11 +15,12 @@ $(document).ready(function(){
         $currentSection = $($sections[i]);
         id = $currentSection[0].id
 
-        $('.header-link').removeClass('active animated pulse infinite');
-        $("#"+id+"-link").addClass('active animated pulse infinite');
+        $('.header-link').removeClass('active animated pulse hinge');
+        $('.header-link').addClass('animated fadeIn');
+        $("#"+id+"-link").addClass('active animated pulse hinge');
 
-        $('.header-link-nav').removeClass('active-nav animated pulse infinite');
-        $("#"+id+"-link-nav").addClass('active-nav animated pulse infinite');
+        $('.header-link-nav').removeClass('active-nav animated pulse hinge');
+        $("#"+id+"-link-nav").addClass('active-nav animated pulse hinge');
 
         break; // break escapes loop before checking divs out of view
       };
