@@ -2,4 +2,4 @@
 
 ##Professional Portfolio
 
-###www.conorkingston.com(http://conorkingston.com)###
+###http://conorkingston.com###
