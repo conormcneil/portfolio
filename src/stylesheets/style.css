@@ -22,6 +22,9 @@ ck-nav.ng-hide-add, ck-project-details.ng-hide-add {
 ck-nav.ng-hide-add.ng-hide-add-active, ck-project-details.ng-hide-add-active {
   opacity: 0; }
 
+.activeHeader {
+  text-decoration: underline; }
+
 body {
   margin: 0;
   padding: 0;

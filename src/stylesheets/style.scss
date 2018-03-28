@@ -27,6 +27,9 @@ $secondary: rgba(120,144,156,1);
 $test1: rgba(26,35,126,1);
 // $test1: rgba(13,71,161,1);
 
+.activeHeader {
+    text-decoration: underline;
+}
 body {
   margin: 0;
   padding: 0;

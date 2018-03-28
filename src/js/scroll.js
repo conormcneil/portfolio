@@ -11,16 +11,15 @@ $(document).ready(function(){
       var divPosition = $($sections[i])[0].offsetTop;
       var id;
 
-      if (divPosition < currentScroll + window.innerHeight * .75) {
+      if (divPosition < currentScroll + window.innerHeight * .2) {
         $currentSection = $($sections[i]);
         id = $currentSection[0].id
 
-        $('.header-link').removeClass('animated hinge');
-        $('.header-link').addClass('animated fadeIn');
-        $("#"+id+"-link").addClass('animated hinge');
+        $('.header-link').removeClass('activeHeader');
+        $("#"+id+"-link").addClass('activeHeader');
 
-        $('.header-link-nav').removeClass('animated hinge');
-        $("#"+id+"-link-nav").addClass('animated hinge');
+        $('.header-link-nav').removeClass('activeHeader');
+        $("#"+id+"-link-nav").addClass('activeHeader');
 
         break; // break escapes loop before checking divs out of view
       };
