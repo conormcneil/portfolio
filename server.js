@@ -18,6 +18,8 @@ app.get('*', function(req, res) {
     res.redirect('/#' + req.originalUrl);
 });
 
+console.log(`node server running on port ${process.env.PORT}`);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
@@ -29,7 +31,7 @@ app.use(function(req, res, next) {
 
 // development error handler
 // will print stacktrace
-if (app.get('env') === 'development') {
+if (process.env.ENV === 'development') {
     app.use(function(err, req, res, next) {
         res.status(err.status || 500);
         res.render('error', {
