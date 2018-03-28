@@ -1,49 +1,135 @@
 <!DOCTYPE html>
 <html lang="en" ng-app='hireMe'>
+
 <head>
-  <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1,user-scalable=no">
-  <meta name="keywords" content="conor, kingston, conorkingston, web, developer, professional, tucson, arizona, javascript, angular, node, experience, express, seo, development, freelance, neap">
-  <meta name="description" content="Professional full stack web developer.">
-  <!-- jQuery 3.1.1.min -->
-  <script src="js/resources/jquery-3.1.1.min.js" charset="utf-8"></script>
-  <!-- Font Awesome (icons) -->
-  <script src="https://use.fontawesome.com/67cec8fdd7.js"></script>
-  <!-- Materialize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-  <!-- Angular CDNs -->
-  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js' charset="utf-8"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js" charset="utf-8"></script>
-  <!-- Local Scripts -->
-  <script src='js/app.js'></script>
-  <script src='js/controllers.js'></script>
-  <script src='js/directives.js'></script>
-  <script src='js/services.js'></script>
-  <script src='js/scroll.js'></script>
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="stylesheets/style.css">
-  <link rel="icon" href="imgfavicon.ico" type="image/x-icon" />
-  <base href="/">
-  <title>conorkingston</title>
+    <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="keywords" content="conor, kingston, conorkingston, web, developer, professional, tucson, arizona, javascript, angular, node, experience, express, seo, development, freelance, neap">
+    <meta name="description" content="Professional full stack web developer.">
+    <!-- jQuery 3.1.1.min -->
+    <script src="js/resources/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <!-- Font Awesome (icons) -->
+    <script src="https://use.fontawesome.com/67cec8fdd7.js"></script>
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <!-- Angular CDNs -->
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js' charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js" charset="utf-8"></script>
+    <!-- Local Scripts -->
+    <script src='js/app.js'></script>
+    <script src='js/controllers.js'></script>
+    <script src='js/directives.js'></script>
+    <script src='js/services.js'></script>
+    <script src='js/scroll.js'></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" href="imgfavicon.ico" type="image/x-icon" />
+    <base href="/">
+    <title>conorkingston</title>
 </head>
+
 <body>
 
-  <ck-header></ck-header>
-  <ck-nav class="z-depth-3" ng-show="view.showMenu" ng-animate=" 'animate' "></ck-nav>
-  <ck-home class="fullscreen scroll-container" id="home"></ck-home>
-  <ck-projects class="x_fullscreen scroll-container" id="projects"></ck-projects>
-  <ck-about-me class="x_fullscreen scroll-container" id="about-me"></ck-about-me>
-  <ck-contact-me class="scroll-container" id="contact-me"></ck-contact-me>
-  <ck-footer></ck-footer>
+    <header class="z-depth-1">
+        <div class="width-wrap">
+            <a href="/"><h2 class='site-title text-shadow pointer'>&copy; conor kingston</h2></a>
+            <div class="mobile-responsive">
+                <img src="img/icons/ic_menu_white_24px.svg" alt="Menu" title="Menu" class="menu-icon pointer" ng-click="toggle('showMenu')">
+            </div>
+            <div class="desktop-responsive header-menu">
+                <a href="#">
+                    <h5 class="active header-link pointer text-shadow" id="home-link">home</h5>
+                </a>
+                <a href="#projects">
+                    <h5 class="header-link pointer text-shadow" id="projects-link">projects</h5>
+                </a>
+                <a href="#about-me">
+                    <h5 class="header-link pointer text-shadow" id="about-me-link">about</h5>
+                </a>
+                <a href="#contact-me">
+                    <h5 class="header-link pointer text-shadow" id="contact-me-link">contact</h5>
+                </a>
+            </div>
+        </div>
+    </header>
 
+    <ck-nav class="z-depth-3" ng-show="view.showMenu" ng-animate=" 'animate' ">
+        <div class='menu mobile-responsive width-wrap'>
+          <!-- <div class="width-wrap"> -->
+            <a href="#">
+              <p class="header-link-nav active-nav pointer text-shadow" ng-click="toggle('showMenu');" id="home-link-nav">home</p>
+            </a>
+            <a href="#projects">
+              <p class="header-link-nav pointer text-shadow" ng-click="toggle('showMenu');" id="projects-link-nav">projects</p>
+            </a>
+            <a href="#about-me">
+              <p class="header-link-nav pointer text-shadow" ng-click="toggle('showMenu');" id="about-me-link-nav">about</p>
+            </a>
+            <a href="#contact-me">
+              <p class="header-link-nav pointer text-shadow" ng-click="toggle('showMenu');" id="contact-me-link-nav">contact</p>
+            </a>
+          <!-- </div> -->
 
-  <script>
-    window.addEventListener("hashchange",function() {
-      window.scrollTo(window.scrollX, window.scrollY - 100);
-    });
-  </script>
+          <!-- curtain closes menu on body select -->
+          <div class="curtain" ng-click="toggle('showMenu');"></div>
+        </div>
+    </ck-nav>
+    
+    <ck-home class="fullscreen scroll-container" id="home">
+        <img ng-src="img/headshot.jpg" alt="Conor Kingston" title="Conor Kingston" class="headshot z-depth-2">
+        <h1 class="text-shadow">Software Developer</h1>
+    </ck-home>
+    
+    <ck-projects class="x_fullscreen scroll-container" id="projects"></ck-projects>
+    
+    <ck-about-me class="x_fullscreen scroll-container" id="about-me">
+        <h4 class="text-shadow">About</h4>
+        <div class="bio">
+            <div class="width-wrap">
+                <div class="bio-col-1">
+                    <p>i am a full stack web developer who is passionate about finding simple solutions to complex problems.</p>
+                    <p>i believe in clean code, elegant UI and robust testing. my ideal work environment values clear, effective communication and collaboration. though i am a self-motivated developer, i value the process that goes into producing a full-stack web
+                        app that everyone involved can be proud of.</p>
+                </div>
+                <div class="bio-col-2">
+                    <p>my web development skills include HTML5, CSS3 & SASS & Responsive Web Design, JavaScript & ES6, Angular.js, Node.js, jQuery.js, TDD (Jasmine, Mocha, Chai, Intern), Version Control (Git), and Agile Processes (Pivotal Tracker).</p>
+                    <p>prior to Galvanize, i worked for Apple, including almost 3 years as a Genius repairing Mac computers, iOS devices, and customer relationships.</p>
+                </div>
+            </div>
+            <form method="get" action="Kingston-Resume.pdf" target="_blank">
+                <button type="submit" class="z-depth-1"><img ng-src="img/icons/file_download_white.svg">Download Resume</button>
+            </form>
+        </div>
+    </ck-about-me>
+    
+    <ck-contact-me class="scroll-container" id="contact-me">
+        <div class="contact" ng-init="showPhone = false">
+          <div class="width-wrap">
+            <div class="location">
+              <h5><img ng-src="img/icons/location.svg">Location</h5>
+              <p>2804 E Adams St</p>
+              <p>Tucson, AZ 85716</p>
+            </div>
+            <div class="center">
+              <h5>contact me</h5>
+              <div class="links">
+                <a href="https://github.com/conormcneil" target="_blank" class="fa fa-github pointer"></a>
+                <a href="https://linkedin.com/in/conorkingston" target="_blank" class="fa fa-linkedin-square pointer"></a>
+                <a href="mailto:conor@conorkingston.com" class="fa fa-envelope pointer"></a>
+                <a class="fa fa-phone pointer" ng-click="showPhone = !showPhone"></a>
+              </div>
+              <h5 ng-show="showPhone">520.275.1232</h5>
+            </div>
+          </div>
+        </div>
+    </ck-contact-me>
+    
+    <ck-footer>
+        <h6>made by hand with great care</h6>
+    </ck-footer>
 
 </body>
+
 </html>
