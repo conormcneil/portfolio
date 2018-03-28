@@ -1,6 +1,3 @@
-::-webkit-scrollbar {
-  display: none; }
-
 .pointer {
   cursor: pointer; }
 
@@ -321,4 +318,4 @@ h5 {
     flex-direction: column;
     align-items: center; } }
 
-/*# sourceMappingURL=new-style.css.map */
+/*# sourceMappingURL=style.css.map */
