@@ -1,44 +1,44 @@
 app
   .directive('ckHeader',function() {
     return {
-      templateUrl: 'partials/header.html',
+      templateUrl: 'html/header.html',
       controller: 'HeaderController'
     };
   })
   .directive('ckNav',function() {
     return {
-      templateUrl: 'partials/nav.html'
+      templateUrl: 'html/nav.html'
     }
   })
   .directive('ckHome',function() {
     return {
-      templateUrl: '/partials/home.html'
+      templateUrl: '/html/home.html'
     }
   })
   .directive('ckProjects',function() {
     return {
-      templateUrl: '/partials/projects.html',
+      templateUrl: '/html/projects.html',
       controller: 'ProjectController'
     }
   })
   .directive('ckProjectDetails',function() {
     return {
-      templateUrl: '/partials/project-details.html',
+      templateUrl: '/html/project-details.html',
       controller: 'ProjectController'
     }
   })
   .directive('ckAboutMe',function() {
     return {
-      templateUrl: '/partials/about-me.html'
+      templateUrl: '/html/about-me.html'
     }
   })
   .directive('ckContactMe',function() {
     return {
-      templateUrl: '/partials/contact-me.html'
+      templateUrl: '/html/contact-me.html'
     }
   })
   .directive('ckFooter',function() {
     return {
-      templateUrl: '/partials/footer.html'
+      templateUrl: '/html/footer.html'
     }
   });
