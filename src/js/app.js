@@ -5,36 +5,28 @@ angular.module('hireMe', [])
     
     .directive('ckProjects', function() {
         return {
-            templateUrl: '/html/projects.html',
-            controller: 'ProjectController'
+            templateUrl: '/html/projects.html'
         }
     })
     .directive('ckProjectDetails', function() {
         return {
-            templateUrl: '/html/project-details.html',
-            controller: 'ProjectController'
+            templateUrl: '/html/project-details.html'
         }
     })
     
     .controller('ProjectController', ['$scope','portfolio',function($scope,portfolio) {
-        $scope.view = {};
-        $scope.view.projectDetails = false;
-        $scope.view.projects = portfolio.projects;
-        $scope.view.setActiveProject = function(id) {
-            $scope.view.projects.map(function(e) {
-                if (e.id === id) $scope.view.activeProject = e;
-            });
-        };
-        $scope.toggle = function(formName) {
-            $scope.view[formName] = !$scope.view[formName];
-        };
-    }])
-    .controller('HeaderController', ['$scope',function($scope) {
         $scope.view = {
-            showMenu: false
-        };
-        $scope.toggle = function(formName) {
-            $scope.view[formName] = !$scope.view[formName];
+            projectDetails: false
+            ,projects: portfolio.projects
+            ,showMenu: false
+            ,setActiveProject: (id) => {
+                $scope.view.projects.map(function(e) {
+                    if (e.id === id) $scope.view.activeProject = e;
+                });
+            }
+            ,toggle: function(formName) {
+                $scope.view[formName] = !$scope.view[formName];
+            }
         };
     }])
     
