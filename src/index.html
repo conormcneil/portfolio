@@ -20,59 +20,59 @@
 
 <body ng-controller="ProjectController">
 
-    <header class="z-depth-1">
-        <div class="width-wrap">
-            <a href="/"><h2 class='site-title text-shadow pointer'>conor kingston</h2></a>
-            <div class="mobile-responsive">
-                <img src="img/icons/ic_menu_white_24px.svg" alt="Menu" title="Menu" class="menu-icon pointer" ng-click="toggle('showMenu')">
-            </div>
-            <div class="desktop-responsive header-menu">
-                <a href="#">
-                    <h5 class="active header-link pointer text-shadow" id="home-link">home</h5>
-                </a>
-                <a href="#projects">
-                    <h5 class="header-link pointer text-shadow" id="projects-link">projects</h5>
-                </a>
-                <a href="#about-me">
-                    <h5 class="header-link pointer text-shadow" id="about-me-link">about</h5>
-                </a>
-                <a href="#contact-me">
-                    <h5 class="header-link pointer text-shadow" id="contact-me-link">contact</h5>
-                </a>
-            </div>
+    <header class="header flex row nowrap">
+        <h2 class='title text-shadow pointer'>conor kingston</h2>
+        <div class="header-menu">
+            <h5 class="active header-link pointer text-shadow" id="home-link"><a href="#">home</a></h5>
+            <h5 class="header-link pointer text-shadow" id="projects-link"><a href="#projects">projects</a></h5>
+            <h5 class="header-link pointer text-shadow" id="about-me-link"><a href="#about-me">about</a></h5>
+            <h5 class="header-link pointer text-shadow" id="contact-me-link"><a href="#contact-me">contact</a></h5>
         </div>
     </header>
 
-    <ck-nav class="z-depth-3" ng-show="view.showMenu" ng-animate=" 'animate' ">
+    <!-- <ck-nav class="z-depth-3" ng-show="view.showMenu" ng-animate=" 'animate' ">
         <div class='menu mobile-responsive width-wrap'>
-          <!-- <div class="width-wrap"> -->
             <a href="#">
-              <p class="header-link-nav active-nav pointer text-shadow" ng-click="toggle('showMenu');" id="home-link-nav">home</p>
+              <p class="header-link-nav active-nav pointer text-shadow" ng-click="view.toggle('showMenu');" id="home-link-nav">home</p>
             </a>
             <a href="#projects">
-              <p class="header-link-nav pointer text-shadow" ng-click="toggle('showMenu');" id="projects-link-nav">projects</p>
+              <p class="header-link-nav pointer text-shadow" ng-click="view.toggle('showMenu');" id="projects-link-nav">projects</p>
             </a>
             <a href="#about-me">
-              <p class="header-link-nav pointer text-shadow" ng-click="toggle('showMenu');" id="about-me-link-nav">about</p>
+              <p class="header-link-nav pointer text-shadow" ng-click="view.toggle('showMenu');" id="about-me-link-nav">about</p>
             </a>
             <a href="#contact-me">
-              <p class="header-link-nav pointer text-shadow" ng-click="toggle('showMenu');" id="contact-me-link-nav">contact</p>
-            </a>
-          <!-- </div> -->
-
+              <p class="header-link-nav pointer text-shadow" ng-click="view.toggle('showMenu');" id="contact-me-link-nav">contact</p>
+            </a> -->
           <!-- curtain closes menu on body select -->
-          <div class="curtain" ng-click="toggle('showMenu');"></div>
+          <!-- <div class="curtain" ng-click="view.toggle('showMenu');"></div>
         </div>
-    </ck-nav>
+    </ck-nav> -->
     
-    <ck-home class="fullscreen scroll-container" id="home">
-        <img ng-src="img/headshot.jpg" alt="Conor Kingston" title="Conor Kingston" class="headshot z-depth-2">
-        <h1 class="text-shadow">Software Developer</h1>
-    </ck-home>
+    <home class="ck-home fullscreen" id="home">
+        <div class="ck-home-content">
+            <img ng-src="img/headshot.jpg" alt="Conor Kingston" title="Conor Kingston" class="headshot z-depth-2">
+            <h1 class="text-shadow">Software Developer</h1>
+        </div>
+    </home>
     
-    <ck-projects class="x_fullscreen scroll-container" id="projects"></ck-projects>
+    <main class="ck-projects fullscreen" id="projects">
+        <div class="ck-projects-content">
+            <h3 class="title">Recent Projects</h3>
+            <div class="project" ng-repeat="project in view.projects track by $index">
+                <p>{{ project.title }}</p>
+                <!-- <img ng-src="{{ project.screenshot }}" alt="{{ project.title }}" title="{{ project.title }}" class="screenshot pointer z-depth-2" ng-click="view.toggle('projectDetails');view.setActiveProject(project.id)"> -->
+            </div>
+        </div>
+
+        <!-- curtain: superimposes itself on top of all other elements
+         to display info about a specific project -->
+        <!-- <ck-project-details ng-show="view.projectDetails"></ck-project-details> -->
+    </main>
     
-    <ck-about-me class="x_fullscreen scroll-container" id="about-me">
+    <!-- <ck-projects class="ck-projects fullscreen" id="projects"></ck-projects> -->
+    
+    <!-- <ck-about-me class="x_fullscreen scroll-container" id="about-me">
         <h4 class="text-shadow">About</h4>
         <div class="bio">
             <div class="width-wrap">
@@ -116,7 +116,7 @@
     
     <ck-footer>
         <h6>made by hand with great care</h6>
-    </ck-footer>
+    </ck-footer> -->
 
 </body>
 
