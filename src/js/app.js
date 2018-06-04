@@ -14,7 +14,7 @@ angular.module('hireMe', [])
         }
     })
     
-    .controller('ProjectController', ['$scope','portfolio',function($scope,portfolio) {
+    .controller('MainController', ['$scope','portfolio',function($scope,portfolio) {
         $scope.view = {
             projectDetails: false
             ,projects: portfolio.projects
