@@ -16,10 +16,10 @@ a {
   color: inherit; }
 
 .text-shadow {
-  text-shadow: 0 0 1px white; }
+  text-shadow: 0 0 0.1em white; }
 
 .text-shadow-alt {
-  text-shadow: 0 0 1px #0091ea; }
+  text-shadow: 0 0 0.1em #0091ea; }
 
 .fullscreen {
   min-height: calc(100vh - 6em); }
@@ -91,8 +91,39 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    z-index: 5;
-    background: red; }
+    z-index: 5; }
+
+.ck-about-me {
+  background: #0091ea;
+  color: white;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ck-about-me .ck-about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    width: 70%; }
+
+.ck-footer {
+  background: white;
+  position: relative;
+  display: flex;
+  z-index: 15;
+  justify-content: center;
+  align-items: center; }
+  .ck-footer .contact {
+    color: #0091ea; }
+  .ck-footer .signature {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 6em;
+    background: #78909c;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */

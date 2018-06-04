@@ -21,28 +21,28 @@
 <body ng-controller="ProjectController">
 
     <header class="header flex row nowrap">
-        <h2 class='title text-shadow pointer'>conor kingston</h2>
+        <h2 class='title pointer'>conor kingston</h2>
         <div class="header-menu">
-            <h5 class="active header-link pointer text-shadow" id="home-link"><a href="#">home</a></h5>
-            <h5 class="header-link pointer text-shadow" id="projects-link"><a href="#projects">projects</a></h5>
-            <h5 class="header-link pointer text-shadow" id="about-me-link"><a href="#about-me">about</a></h5>
-            <h5 class="header-link pointer text-shadow" id="contact-me-link"><a href="#contact-me">contact</a></h5>
+            <h5 class="active header-link pointer" id="home-link"><a href="#">home</a></h5>
+            <h5 class="header-link pointer" id="projects-link"><a href="#projects">projects</a></h5>
+            <h5 class="header-link pointer" id="about-me-link"><a href="#about-me">about</a></h5>
+            <h5 class="header-link pointer" id="contact-me-link"><a href="#contact-me">contact</a></h5>
         </div>
     </header>
 
     <!-- <ck-nav class="z-depth-3" ng-show="view.showMenu" ng-animate=" 'animate' ">
         <div class='menu mobile-responsive width-wrap'>
             <a href="#">
-              <p class="header-link-nav active-nav pointer text-shadow" ng-click="view.toggle('showMenu');" id="home-link-nav">home</p>
+              <p class="header-link-nav active-nav pointer" ng-click="view.toggle('showMenu');" id="home-link-nav">home</p>
             </a>
             <a href="#projects">
-              <p class="header-link-nav pointer text-shadow" ng-click="view.toggle('showMenu');" id="projects-link-nav">projects</p>
+              <p class="header-link-nav pointer" ng-click="view.toggle('showMenu');" id="projects-link-nav">projects</p>
             </a>
             <a href="#about-me">
-              <p class="header-link-nav pointer text-shadow" ng-click="view.toggle('showMenu');" id="about-me-link-nav">about</p>
+              <p class="header-link-nav pointer" ng-click="view.toggle('showMenu');" id="about-me-link-nav">about</p>
             </a>
             <a href="#contact-me">
-              <p class="header-link-nav pointer text-shadow" ng-click="view.toggle('showMenu');" id="contact-me-link-nav">contact</p>
+              <p class="header-link-nav pointer" ng-click="view.toggle('showMenu');" id="contact-me-link-nav">contact</p>
             </a> -->
           <!-- curtain closes menu on body select -->
           <!-- <div class="curtain" ng-click="view.toggle('showMenu');"></div>
@@ -52,48 +52,43 @@
     <home class="ck-home fullscreen" id="home">
         <div class="ck-home-content">
             <img ng-src="img/headshot.jpg" alt="Conor Kingston" title="Conor Kingston" class="headshot z-depth-2">
-            <h1 class="text-shadow">Software Developer</h1>
+            <h1>Software Developer</h1>
         </div>
     </home>
     
     <main class="ck-projects fullscreen" id="projects">
         <div class="ck-projects-content">
-            <h3 class="title">Recent Projects</h3>
+            <h3 class="title">Projects</h3>
             <div class="project" ng-repeat="project in view.projects track by $index">
                 <p>{{ project.title }}</p>
-                <!-- <img ng-src="{{ project.screenshot }}" alt="{{ project.title }}" title="{{ project.title }}" class="screenshot pointer z-depth-2" ng-click="view.toggle('projectDetails');view.setActiveProject(project.id)"> -->
             </div>
         </div>
-
-        <!-- curtain: superimposes itself on top of all other elements
-         to display info about a specific project -->
-        <!-- <ck-project-details ng-show="view.projectDetails"></ck-project-details> -->
     </main>
     
-    <!-- <ck-projects class="ck-projects fullscreen" id="projects"></ck-projects> -->
-    
-    <!-- <ck-about-me class="x_fullscreen scroll-container" id="about-me">
-        <h4 class="text-shadow">About</h4>
-        <div class="bio">
-            <div class="width-wrap">
-                <div class="bio-col-1">
-                    <p>i am a full stack web developer who is passionate about finding simple solutions to complex problems.</p>
-                    <p>i believe in clean code, elegant UI and robust testing. my ideal work environment values clear, effective communication and collaboration. though i am a self-motivated developer, i value the process that goes into producing a full-stack web
-                        app that everyone involved can be proud of.</p>
+    <ck-about-me class="ck-about-me fullscreen" id="about-me">
+        <div class="ck-about-me-content">
+            <h4>About</h4>
+            <div class="bio">
+                <div class="width-wrap">
+                    <div class="bio-col-1">
+                        <p>i am a full stack web developer who is passionate about finding simple solutions to complex problems.</p>
+                        <p>i believe in clean code, elegant UI and robust testing. my ideal work environment values clear, effective communication and collaboration. though i am a self-motivated developer, i value the process that goes into producing a full-stack web
+                            app that everyone involved can be proud of.</p>
+                    </div>
+                    <div class="bio-col-2">
+                        <p>my web development skills include HTML5, CSS3 & SASS & Responsive Web Design, JavaScript & ES6, Angular.js, Node.js, jQuery.js, TDD (Jasmine, Mocha, Chai, Intern), Version Control (Git), and Agile Processes (Pivotal Tracker).</p>
+                        <p>prior to Galvanize, i worked for Apple, including almost 3 years as a Genius repairing Mac computers, iOS devices, and customer relationships.</p>
+                    </div>
                 </div>
-                <div class="bio-col-2">
-                    <p>my web development skills include HTML5, CSS3 & SASS & Responsive Web Design, JavaScript & ES6, Angular.js, Node.js, jQuery.js, TDD (Jasmine, Mocha, Chai, Intern), Version Control (Git), and Agile Processes (Pivotal Tracker).</p>
-                    <p>prior to Galvanize, i worked for Apple, including almost 3 years as a Genius repairing Mac computers, iOS devices, and customer relationships.</p>
-                </div>
+                <form method="get" action="Kingston-Resume.pdf" target="_blank">
+                    <button type="submit" class="z-depth-1"><img ng-src="img/icons/file_download_white.svg">Download Resume</button>
+                </form>
             </div>
-            <form method="get" action="Kingston-Resume.pdf" target="_blank">
-                <button type="submit" class="z-depth-1"><img ng-src="img/icons/file_download_white.svg">Download Resume</button>
-            </form>
         </div>
     </ck-about-me>
     
-    <ck-contact-me class="scroll-container" id="contact-me">
-        <div class="contact" ng-init="showPhone = false">
+    <ck-footer class="ck-footer fullscreen">
+        <div class="contact flex row nowrap">
           <div class="width-wrap">
             <div class="location">
               <h5><img ng-src="img/icons/location.svg">Location</h5>
@@ -112,11 +107,8 @@
             </div>
           </div>
         </div>
-    </ck-contact-me>
-    
-    <ck-footer>
-        <h6>made by hand with great care</h6>
-    </ck-footer> -->
+        <h6 class="signature">made by hand with great care</h6>
+    </ck-footer>
 
 </body>
 
