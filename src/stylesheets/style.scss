@@ -1,165 +1,141 @@
-$font1: sans-serif;
-$primary: rgba(0,145,234,1);
-$secondary: rgba(120,144,156,1);
-$test1: rgba(26,35,126,1);
-$headerHeight: 6em;
-
-.activeHeader {
-    text-decoration: underline;
-}
+$font: sans-serif;
+$inn1: rgba(255,197,192,1);
+$inn2: rgba(183,230,255,1);
+$inn3: rgba(45,78,0,1);
+$inn4: rgba(201,89,55,1);
+$inn5: rgba(18,44,94,1);
+$black: rgba(0,0,0,1);
+$headerHeight: 3em;
 
 body {
+    
     padding: 0;
-    margin: 0;
-    color: $primary;
+    margin: $headerHeight 0 0;
+    color: $inn5;
     text-transform: lowercase;
+    
     font: {
-        family: $font1;
+        family: $font;
     }
-    h1, h2, h3, h4, h5, h6, p {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
         margin: 0;
         padding: 0;
     }
+    
+    .signature {
+        height: $headerHeight;
+        display: flex;
+        align-items: center;
+    }
+    
 }
 
 a {
     text-decoration: none;
-    color: inherit;
-}
-
-.text-shadow {
-    text-shadow: 0 0 0.1em white;
-}
-
-.text-shadow-alt {
-    text-shadow: 0 0 0.1em $primary;
-}
-
-.fullscreen {
-    min-height: calc(100vh - #{$headerHeight});
-}
-.title {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.flex {
-    display: flex;
-}
-.flex.row {
-    flex-direction: row;
-}
-    
-.flex.col {
-    flex-direction: column;
-}
-.flex.wrap {
-    flex-wrap: wrap;
-}    
-.flex.nowrap {
-    flex-wrap: nowrap;
+    color: $inn3;
+    letter-spacing: .3em;
+    width: inherit;
+    height: auto;
 }
 
 .header {
-    background: $test1;
-    color: white;
+    
     margin: 0;
-    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
+    background: $inn2;
+    color: $black;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: $headerHeight;
     z-index: 100;
     
-    .header-menu {
+    section {
+        
+        width: 25%;
+        
+        &:first-child {
+            text-align: left;
+        }
+        
+        &:nth-child(2) {
+            text-align: center;
+        }
+        
+        &:last-child {
+            align-items: flex-end;
+        }
+    }
+
+    .menu {
+        
+        display: flex;
+        flex-flow: row-reverse nowrap;
+
+        .link {
+            margin: 0 0 0 0.5em;
+            cursor: pointer;
+        }
+        
+    }
+    
+}
+
+.fullscreen {
+    
+    min-height: calc(100vh - #{$headerHeight});
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    .ghost {
+        height: 0;
+        width: 100%;
+    }
+    
+    .headshot {
+        height: 20em;
+        border-radius: 10em;
+    }
+
+    &:nth-child(2n) {
+        background: $inn1;
+    }
+
+    .content {
+        
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        
+        .bio {
+            width: 500px;
+        }
+        
+    }
+    
+    .project {
+        
         display: flex;
         flex-flow: row nowrap;
-        .header-link {
-            margin: 0 0 0 0.5em;
-        }
-    }
-}
-
-.ck-home {
-    margin: $headerHeight 0 0 0;
-    width: 100vw;
-    position: relative;
-    background: $primary;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    z-index: 1;
-    
-    .ck-home-content {
-        position: fixed;
         
-        .headshot {
-            height: 20em;
-            border-radius: 10em;
+        .fa-github {
+            color: $inn2;
         }
-    } 
-    
-}
-
-.ck-projects {
-    background: white;
-    position: relative;
-    z-index: 5;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    
-    .ck-projects-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 5;
-    }
-}
-
-.ck-about-me {
-    background: $primary;
-    color: white;
-    position: relative;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .ck-about-me-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 3;
-        width: 70%;
-    }
-}
-
-.ck-footer {
-    background: white;
-    position: relative;
-    display: flex;
-    z-index: 15;
-    justify-content: center;
-    align-items: center;
-    
-    .contact {
-        color: $primary;
+        
     }
     
-    .signature {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: $headerHeight;
-        background: $secondary;
-        color: white;
-    }
 }
