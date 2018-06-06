@@ -1,7 +1,6 @@
 body {
   padding: 0;
   margin: 3em 0 0;
-  color: #122c5e;
   text-transform: lowercase;
   font-family: sans-serif; }
   body h1,
@@ -16,27 +15,30 @@ body {
   body .signature {
     height: 3em;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 3em; }
 
 a {
   text-decoration: none;
-  color: #2d4e00;
+  color: #c95937;
   letter-spacing: .3em;
   width: inherit;
   height: auto; }
 
 .header {
   margin: 0;
+  padding: 0 3em;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  background: #b7e6ff;
-  color: black;
+  background: #c0ffdc;
+  color: #2d4e00;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: calc(100vw - 6em);
   height: 3em;
   z-index: 100; }
   .header section {
@@ -55,12 +57,16 @@ a {
       cursor: pointer; }
 
 .fullscreen {
+  padding: 0 3em;
   min-height: calc(100vh - 3em);
-  width: 100vw;
+  width: calc(100vw - 6em);
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background: white;
+  color: #2d4e00;
+  align-items: flex-end; }
   .fullscreen .ghost {
     height: 0;
     width: 100%; }
@@ -68,17 +74,22 @@ a {
     height: 20em;
     border-radius: 10em; }
   .fullscreen:nth-child(2n) {
-    background: #ffc5c0; }
+    background: #ffc5c0;
+    color: #2d4e00;
+    align-items: flex-start; }
+    .fullscreen:nth-child(2n) .content {
+      align-self: flex-end; }
   .fullscreen .content {
     display: flex;
     flex-flow: column;
-    align-items: center; }
+    align-items: center;
+    align-self: flex-start; }
     .fullscreen .content .bio {
       width: 500px; }
   .fullscreen .project {
     display: flex;
     flex-flow: row nowrap; }
     .fullscreen .project .fa-github {
-      color: #b7e6ff; }
+      color: #2d4e00; }
 
 /*# sourceMappingURL=style.css.map */
