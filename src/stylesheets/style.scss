@@ -1,8 +1,10 @@
 $font: sans-serif;
-$inn1: rgba(255,197,192,1);
-$inn2: rgba(45,78,0,1);
-$inn3: rgba(201,89,55,1);
-$inn4: rgba(192,255,220,1);
+
+$color1: rgba(43,51,72,1);
+$color2: rgba(46,149,201,1);
+$color3: rgba(253,213,214,1);
+$color4: rgba(199,202,204,1);
+
 $gutter: 3em;
 
 $headerHeight: 3em;
@@ -40,7 +42,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $inn3;
+    color: $color2;
     letter-spacing: .3em;
     width: inherit;
     height: auto;
@@ -54,8 +56,8 @@ a {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background: $inn4;
-    color: $inn2;
+    background: $color4;
+    color: $color1;
     position: fixed;
     top: 0;
     left: 0;
@@ -104,8 +106,12 @@ a {
     align-items: center;
     justify-content: space-around;
     background: white;
-    color: $inn2;
+    color: $color1;
     align-items: flex-end;
+    
+    h1 {
+        text-decoration: underline;
+    }
     
     .ghost {
         height: 0;
@@ -118,8 +124,7 @@ a {
     }
 
     &:nth-child(2n) {
-        background: $inn1;
-        color: $inn2;
+        background: $color3;
         align-items: flex-start;
         
         .content {
@@ -141,14 +146,8 @@ a {
     }
     
     .project {
-        
         display: flex;
         flex-flow: row nowrap;
-        
-        .fa-github {
-            color: $inn2;
-        }
-        
     }
     
 }
