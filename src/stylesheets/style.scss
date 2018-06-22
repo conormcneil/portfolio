@@ -35,7 +35,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding: 0 $gutter;
+        width: 100%;
     }
     
 }
@@ -121,23 +121,14 @@ a {
     .headshot {
         height: 20em;
         border-radius: 10em;
+        border: 3px solid $color1;
     }
 
     &:nth-child(2n) {
         background: $color3;
-        align-items: flex-start;
-        
-        .content {
-            align-self: flex-end;
-        }
     }
 
     .content {
-        
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        align-self: flex-start;
         
         .bio {
             width: 500px;
@@ -148,6 +139,32 @@ a {
     .project {
         display: flex;
         flex-flow: row nowrap;
+    }
+    
+}
+
+.wrapper {
+    
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    &.row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &.col {
+        height: 50vh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    :nth-child(2n) {
+        align-self: flex-end;
     }
     
 }
